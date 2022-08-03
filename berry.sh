@@ -14,13 +14,13 @@ cp .xinitrc /home/$username/
 apt-get -y install libx11-dev libxft-dev libxinerama-dev
 
 #Online Install#
-#git clone https://github.com/JLErvin/berry
-#cd berry
-#make
-#sudo make install
-#mkdir $HOME/.config/berry
-#cp examples/sxhkdrc $HOME/.config/berry/sxhkdrc
-#cp examples/autostart $HOME/.config/berry/autostart
+git clone https://github.com/JLErvin/berry
+cd berry
+make
+sudo make install
+mkdir $username/.config/berry
+cp examples/sxhkdrc $username/.config/berry/sxhkdrc
+cp examples/autostart $username/.config/berry/autostart
 
 #Offline Install berry wm#
-dpkg -i pkg/berry_0.1.11-1_amd64_bullseye.deb
+#dpkg -i pkg/berry_0.1.11-1_amd64_bullseye.deb
