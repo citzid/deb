@@ -6,10 +6,9 @@
 ##Change repo Debian to SID 
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list
-
-username=$(id -u -n 1000)
-builddir=$(pwd)
 apt update
+
+chmod +x alacritty.sh berry.sh berry.desktop packages.sh polybar.sh resources.sh .xinitrc
 
 echo "This script is about to run another script."
 sh ./berry.sh
