@@ -7,7 +7,7 @@ username=$(id -u -n 1000)
 apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 dpkg-reconfigure lightdm
 cp .xinitrc /home/$username/
-chmod +x alacritty.sh berry.desktop packages.sh polybar.sh resources.sh .xinitrc
+
 ##################################################################################
 ##Install Berry Window Manager
 #Install Dependencies#
