@@ -15,13 +15,13 @@ echo "This script is about to run another script."
 sh ./berry.sh
 echo "BerryWm installed."
 #sh ./alacritty.sh
-echo "Alacritty installed."
+#echo "Alacritty installed."
 #sh ./polybar.sh
-echo "Polybar installed."
+#echo "Polybar installed."
 #sh ./packages.sh
-echo "TYour Packages installed."
+#echo "Your Packages installed."
 #sh ./resources.sh
-echo "Your resources installed."
+#echo "Your resources installed."
 
 ##NOTE##
 #uncomment the rest script after BERRYWM run normally. And comment berrysh
