@@ -1,12 +1,13 @@
 #!/bin/bash
 #RUN this after installing base Debian with no GUI and install git
 #Made by @citz_id
-
+username=$(id -u -n 1000)
 ##################################################################################
 ##Install Dekstop Manager
 apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 dpkg-reconfigure lightdm
-cp .xinitrc /home/$USER/
+cp .xinitrc /home/$username/
+chmod +x alacritty.sh berry.desktop packages.sh polybar.sh resources.sh .xinitrc
 ##################################################################################
 ##Install Berry Window Manager
 #Install Dependencies#
