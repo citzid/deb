@@ -8,7 +8,7 @@ cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list
 apt update
 
-chmod +x alacritty.sh berry.sh berry.desktop packages.sh polybar.sh resources.sh .xinitrc
+chmod +x alacritty.sh berry.sh berry.desktop packages.sh polybar.sh resources.sh .xinitrc pkg/berry_0.1.11-1_amd64_bullseye.deb
 
 echo "This script is about to run another script."
 sh ./berry.sh
