@@ -8,28 +8,21 @@ apt update
 
 ##################################################################################
 ## Clone my resources file (if you have own resources, you can edit this) ##
-git clone https://github.com/citzid/bg
-git clone https://github.com/citzid/fonts
-git clone https://github.com/citzid/icons
-git clone https://github.com/citzid/grubthemes
+git clone https://github.com/citzid/bg.git
+git clone https://github.com/citzid/fonts.git
+git clone https://github.com/citzid/icons.git
+git clone https://github.com/citzid/grubthemes.git
+
 ##################################################################################
 ## Copy resources file
 cd $builddir
 #Create folders in user directory (eg. Documents,Downloads,etc.)#
-mkdir -p home/$username/Documents 
-mkdir -p home/$username/Downloads/ 
-mkdir -p home/$username/Music 
-mkdir -p home/$username/Pictures 
-mkdir -p home/$username/Videos 
-mkdir -p home/$username/.resources
-mkdir -p home/$username/.resources/bg
-mkdir -p home/$username/.resources/fonts
-mkdir -p home/$username/.resources/icons
-mkdir -p home/$username/.resources/grubthemes
+mkdir -p home/$username/Documents Downloads Music Pictures Videos
+mkdir -p home/$username/.config/bg fonts icons grubthemes
 
-cp -R bg/* /home/$username/.resources/bg
-cp -R font/* /home/$username/.resources/fonts
-cp -R icon/* /home/$username/.resources/icons
+cp -R bg/* /home/$username/.config/bg
+cp -R font/* /home/$username/.config/fonts
+cp -R icon/* /home/$username/.config/icons
 cp -R grubthemes/* /home/$username/grubthemes
 
 chown -R $username:$username /home/$username
