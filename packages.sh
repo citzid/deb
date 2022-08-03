@@ -4,12 +4,12 @@
 
 ##################################################################################
 ##Install terminal emulator
-#apt-get install -y kitty
+apt-get install -y kitty
 #apt-get install -y terminator
 
 ##################################################################################
 ##Install browser
-apt-get install -y firefox-esr
+#apt-get install -y firefox-esr
 #apt-get install -y brave
 #apt-get install -y chromium
 
@@ -38,7 +38,7 @@ apt-get install -y nitrogen
 apt-get install -y lxappereance 
 ##################################################################################
 ##Install theme setting
-apt-get install -y unzip ranger 
+apt-get install -y unzip ranger arandr
 
 ##################################################################################
 ##Download Nordic Theme
