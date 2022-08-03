@@ -6,7 +6,7 @@
 ##Install Dekstop Manager
 sudo apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 sudo dpkg-reconfigure lightdm
-
+cp .xinitrc /home/$USER/
 ##################################################################################
 ##Install Berry Window Manager
 #Install Dependencies#
