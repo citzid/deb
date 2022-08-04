@@ -6,18 +6,21 @@
 ##################################################################################
 ##Install terminal emulator
 apt-get install -y kitty
+#apt-get install -y urxvt
 #apt-get install -y terminator
+#If you want to install ALACRITTY, uncomment alacritty.sh on go.sh
 
 ##################################################################################
 ##Install browser
-apt-get install -y firefox-esr
-#apt-get install -y brave
+#apt-get install -y firefox-esr
+apt-get install -y brave
 #apt-get install -y chromium
 
 ##################################################################################
 ##Install file manager
-#apt-get install -y thunar
-apt-get install -y pcmanfm
+apt-get install -y ranger
+apt-get install -y thunar
+#apt-get install -y pcmanfm
 #apt-get install -y nautilus
 #apt-get install -y dolphin
 
@@ -27,11 +30,13 @@ apt-get install -y geany
 #apt-get install -y notepadqq
 #apt-get install -y vim
 #apt-get install -y neovim
+#apt-get install -y mousepad
 
 ##################################################################################
-##Install launcher
+##Install launcher Menu
 #apt-get install -y dmenu
-apt-get install -y rofi
+#apt-get install -y rofi
+apt-get install -y wofi
 
 ##################################################################################
 ##Install wallpaper manager
@@ -41,13 +46,19 @@ apt-get install -y nitrogen
 
 ##################################################################################
 ##Install appearance setting
-apt-get install -y lxappearance 
+apt-get install -y lxappearance arandr 
+
+##################################################################################
+##Install other
+apt-get install -y make gcc unzip fonts-ubuntu
+
+
 
 ##################################################################################
 ##############################Install display manager#############################
 
 ##dependencies for ly##
-sudo apt install -y libpam0g-dev libxcb-xkb-dev
+sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 
 ##Install Ly Console Display Manager##
 git clone --recurse-submodules https://github.com/nullgemm/ly.git
@@ -77,10 +88,6 @@ cd ..
 # EOF
 # sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
 
-
-##################################################################################
-##Install other
-apt-get install -y unzip ranger arandr sxhkd fonts-ubuntu
 
 ##################################################################################
 ##Download Nordic Theme
