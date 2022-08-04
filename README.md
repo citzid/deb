@@ -1,6 +1,6 @@
 
-*##NOTE*
-_This project is under construction_
+*##NOTE##*
+_This project is under construction_ DONT CLONE to install. but is up to you with ypur own risk.
 
 I asume you have been installed debian base with no GUI.
 
