@@ -14,7 +14,7 @@ apt update && apt upgrade -y
 ##INSTALL PACKAGES
 chmod +x pkg.sh
 echo "This script is about to run another script."
-./pkg.sh
+./packages.sh
 echo "Your Packages Installed."
 cd ..
 
