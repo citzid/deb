@@ -35,7 +35,7 @@ apt-get install -y nitrogen
 
 ##################################################################################
 ##Install theme setting
-apt-get install -y lxappearance
+apt-get install -y lxappearance sxhkd
 ##################################################################################
 ##Install theme setting
 apt-get install -y unzip ranger arandr dmenu
