@@ -27,7 +27,7 @@ mkdir /home/$username/.config
 mkdir /home/$username/.config/berry
 cp examples/sxhkdrc /home/$username/.config/berry/sxhkdrc
 cp examples/autostart /home/$username/.config/berry/autostart
-
+cd ..
 
 
 ##################################################################################
@@ -41,4 +41,4 @@ cp examples/autostart /home/$username/.config/berry/autostart
 
 ##################################################################################
 cp .xinitrc /home/$username/
-cp berry.desktop ~/usr/share/xsessions/
+cp -R berry.desktop /usr/share/xsessions/
