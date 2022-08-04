@@ -25,8 +25,8 @@ cd berry
 sudo make && sudo make install
 mkdir /home/$username/.config
 mkdir /home/$username/.config/berry
-cp examples/sxhkdrc /home/$username/$username/.config/berry/sxhkdrc
-cp examples/autostart /home/$username/$username/.config/berry/autostart
+cp examples/sxhkdrc /home/$username/.config/berry/sxhkdrc
+cp examples/autostart /home/$username/.config/berry/autostart
 
 
 
