@@ -48,5 +48,5 @@ sudo chmod +x /home/$username/.config/berry/autostart
 #cp examples/* /home/$username.config/berry/
 
 ##################################################################################
-cp .xinitrc /home/$username/
+#cp .xinitrc /home/$username/
 cp -R berry.desktop /usr/share/xsessions/
