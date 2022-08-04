@@ -22,8 +22,8 @@ cd /home/$username/deb
 
 ## Copy resources file
 cp -R bg /home/$username/.config
-cp -R font /home/$username/.config
-cp -R icon /home/$username/.config
+cp -R fonts /home/$username/.config
+cp -R icons /home/$username/.config
 cp -R grubthemes /home/$username/.config
 
 chown -R $username:$username /home/$username
