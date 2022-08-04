@@ -4,13 +4,7 @@
 username=$(id -u -n 1000)
 
 
-##################################################################################
-##Install Dekstop Manager
-apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings make gcc
-dpkg-reconfigure lightdm
-
-
-############################Install Berry Window Manager##########################
+############################Install BSP Window Manager##########################
 ##################################################################################
 
 ##################################################################################
@@ -20,25 +14,20 @@ apt-get -y install libx11-dev libxft-dev libxinerama-dev
 
 ##################################################################################
 ##Online Install##
-git clone https://github.com/JLErvin/berry
-cd berry
-sudo make && sudo make install
-mkdir /home/$username/.config
-mkdir /home/$username/.config/berry
-cp examples/sxhkdrc /home/$username/$username/.config/berry/sxhkdrc
-cp examples/autostart /home/$username/$username/.config/berry/autostart
+sudo apt install -y bspwm sxhkd xorg
+sudo apt autoremove -y lemonbar
 
 
 
 ##################################################################################
-##Offline Install berry wm##
-#dpkg -i pkg/berry_0.1.11-1_amd64_bullseye.deb
-##setup configuration##
-#mkdir -p ~/.config
-#mkdir -p ~/.config/berry
-#cd home/$username
-#cp examples/* /home/$username.config/berry/
-
-##################################################################################
+##Copy configuration##
+cp /usr/share/doc/bspwm/examples/bspwmrc /home/ab/.config/bspwm/bspwmrc
+cp /usr/share/doc/bspwm/examples/sxhkd /home/ab/.config/sxhkd/sxhkdrc
+cp /usr/share/doc/polybar/config /home/ab/.config/polybar/config
 cp .xinitrc /home/$username/
-cp berry.desktop ~/usr/share/xsessions/
+
+chmod +x /home/$username/.config/bspwm/bspwmrc
+chmod +x /home/$username/.config/sxhkd/sxhkdrc
+chmod +x /home/$username/.xinitrc
+##################################################################################
+
