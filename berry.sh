@@ -6,7 +6,7 @@ username=$(id -u -n 1000)
 
 ##################################################################################
 ##Install Dekstop Manager
-apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings make gcc
+apt-get -y install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings make gcc xorg
 dpkg-reconfigure lightdm
 
 
