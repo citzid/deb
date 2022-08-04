@@ -4,32 +4,30 @@ _This project is under construction_
 
 I asume you have been installed debian base with no GUI.
 
-Lets go
-CHOOSE YOU FAVORITE WM
+*Lets go*
+1. *CLONE REPO*
 
-  ```
-  $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
+    ```
+    $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
+    ```
+2. *CHOOSE YOU FAVORITE WM*
+    ```
+    $ sudo chmod +x swayinstall.sh
+    $ sudo ./swayinstall.sh
+    ```
 
-  $ sudo chmod +x swayinstall.sh
-  $ sudo ./swayinstall.sh
-  ```
-
-  or
-  ```
-  $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
-
-  $ sudo chmod +x i3install.sh
-  $ sudo ./i3install.sh
-  ```
+    or
+    ```
+    $ sudo chmod +x i3install.sh
+    $ sudo ./i3install.sh
+    ```
 
 
-  or
-  ```
-  $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
-
-  $ sudo chmod +x bspwminstall.sh
-  $ sudo ./bspwminstall.sh
-  ```
+    or
+    ```
+    $ sudo chmod +x bspwminstall.sh
+    $ sudo ./bspwminstall.sh
+    ```
 
 
 key bind :
