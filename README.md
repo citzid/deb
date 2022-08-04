@@ -1,3 +1,7 @@
+
+*##NOTE*
+_This project is under construction_
+
 I asume you have been installed debian base with no GUI.
 
 Lets go 
@@ -17,4 +21,5 @@ key bind :
 6.super + space = dmenu run
 7.ctrl + shift + r = restart WM
 8.ctrl + shift + c = reload config
+
 
