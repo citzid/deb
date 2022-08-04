@@ -7,7 +7,7 @@
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list
 cp berry.desktop /usr/share/xsessions
-apt update
+apt update && apt upgrade
 
 chmod +x .xinitrc alacritty.sh berry.sh berry.desktop packages.sh polybar.sh resources.sh rofi.sh pkg/berry_0.1.11-1_amd64_bullseye.deb
 
