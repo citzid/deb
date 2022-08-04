@@ -52,12 +52,3 @@ unzip FiraCode.zip -d /usr/share/fonts
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 #unzip Meslo.zip -d /usr/share/fonts
 fc-cache -vf
-chown -R $username:$username /home/$username
-xdg-user-dirs-update
-
-##################################################################################
-##RUN login window
-#sudo systemctl start sddm
-#sudo systemctl enable sddm
-
-printf "\e[1;32mMade by @citz_id : Done!! please reboot.Type 'sudo reboot' enter.\e[0m\n"
