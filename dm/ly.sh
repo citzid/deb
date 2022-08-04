@@ -10,8 +10,7 @@ sudo apt install -y build-essential libpam0g-dev libxcb-xkb-dev
 
 ##Install Ly Console Display Manager##
 git clone --recurse-submodules https://github.com/nullgemm/ly.git
-cd ly/
+cd ly
 sudo make && sudo make install
-sudo systemctl enable ly
 cd ..
 
