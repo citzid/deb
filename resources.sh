@@ -21,10 +21,10 @@ mkdir -p Documents Downloads Music Pictures Videos
 cd /home/$username/deb
 
 ## Copy resources file
-cp -R bg /home/$username/.config/
-cp -R font /home/$username/.config/
-cp -R icon /home/$username/.config/
-cp -R grubthemes /home/$username/.config/
+cp -R bg /home/$username/.config
+cp -R font /home/$username/.config
+cp -R icon /home/$username/.config
+cp -R grubthemes /home/$username/.config
 
 chown -R $username:$username /home/$username
 xdg-user-dirs-update
