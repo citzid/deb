@@ -21,8 +21,8 @@ echo "Your Packages Installed."
 ##################################################################################
 ##INSTALL DISPLAY MANAGER
 cd dm
-chmod +x tui.sh
-./tui.sh
+chmod +x ly.sh
+./ly.sh
 echo "Display Manager Installed."
 cd ..
 
