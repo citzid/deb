@@ -24,7 +24,7 @@ sudo apt autoremove -y lemonbar
 cd /home/$username
 mkdir -p .config
 cd /home/$username/.config
-mkdir -p bspwm sxhkd
+mkdir -p bspwm sxhkd polybar
 
 cd /home/$username/deb/wm
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
