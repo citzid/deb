@@ -14,9 +14,8 @@ apt update && apt upgrade -y
 ##INSTALL PACKAGES
 chmod +x pkg.sh
 echo "This script is about to run another script."
-./packages.sh
+./pkg.sh
 echo "Your Packages Installed."
-cd ..
 
 ##################################################################################
 ##INSTALL DISPLAY MANAGER
