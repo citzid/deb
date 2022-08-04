@@ -38,7 +38,7 @@ apt-get install -y nitrogen
 apt-get install -y lxappearance sxhkd
 ##################################################################################
 ##Install theme setting
-apt-get install -y unzip ranger arandr dmenu
+apt-get install -y unzip ranger arandr
 
 ##################################################################################
 ##Download Nordic Theme
