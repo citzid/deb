@@ -26,7 +26,7 @@ echo "BerryWm installed."
 echo "Your resources installed."
 
 
-##NOTE##
-#uncomment the rest script after BERRYWM run normally. And comment berrysh
-#thats is my resource.sh you can open and edit to use you own resource git.
+*##NOTE##*
+# i comment the rest script because not run normally. you can install manual.
+# you can open and edit _resource.sh_ to use you own resource git.
 
