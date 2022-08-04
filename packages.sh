@@ -9,14 +9,14 @@ apt-get install -y kitty
 
 ##################################################################################
 ##Install browser
-#apt-get install -y firefox-esr
+apt-get install -y firefox-esr
 #apt-get install -y brave
 #apt-get install -y chromium
 
 ##################################################################################
 ##Install file manager
-apt-get install -y thunar
-#apt-get install -y pcmanfm
+#apt-get install -y thunar
+apt-get install -y pcmanfm
 #apt-get install -y nautilus
 #apt-get install -y dolphin
 
@@ -35,7 +35,7 @@ apt-get install -y nitrogen
 
 ##################################################################################
 ##Install theme setting
-apt-get install -y lxappereance 
+apt-get install -y lxappearance
 ##################################################################################
 ##Install theme setting
 apt-get install -y unzip ranger arandr dmenu
