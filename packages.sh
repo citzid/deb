@@ -28,6 +28,11 @@ apt-get install -y geany
 #apt-get install -y neovim
 
 ##################################################################################
+##Install launcher
+#apt-get install -y dmenu
+apt-get install -y rofi
+
+##################################################################################
 ##Install wallpaper manager
 apt-get install -y nitrogen
 #apt-get install -y feh
@@ -36,6 +41,7 @@ apt-get install -y nitrogen
 ##################################################################################
 ##Install theme setting
 apt-get install -y lxappearance sxhkd xorg xserver-xorg-video-intel
+
 ##################################################################################
 ##Install theme setting
 apt-get install -y unzip ranger arandr
