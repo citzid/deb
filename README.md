@@ -8,7 +8,7 @@ Lets go
 
 1. Clone repo
     ```
-    $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
+    $ git clone https://github.com/citzid/deb.git && cd deb
     ```
   
 2. Choose your favorite Window Manager
