@@ -27,3 +27,11 @@ cp -R grubthemes/* /home/$username/grubthemes
 
 chown -R $username:$username /home/$username
 xdg-user-dirs-update
+
+##################################################################################
+##RUN login window
+sudo systemctl start lightdm
+sudo systemctl enable lightdm
+
+
+printf "\e[1;32mMade by @citz_id : Done!! please reboot.Type 'sudo reboot' enter.\e[0m\n"
