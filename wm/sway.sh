@@ -8,8 +8,8 @@ username=$(id -u -n 1000)
 ##################################################################################
 
 mkdir -p home/$username/.config/sway
-sudo apt install -y sway wayland xorg-wayland 
-cp /etc/sway/config /home/$username/.config/sway/config
+sudo apt install -y sway
+cp ~/etc/sway/config /home/$username/.config/sway/config
 
 
 
