@@ -23,10 +23,15 @@ apt-get -y install libx11-dev libxft-dev libxinerama-dev
 git clone https://github.com/JLErvin/berry
 cd berry
 sudo make && sudo make install
+
 mkdir /home/$username/.config
 mkdir /home/$username/.config/berry
+
 cp examples/sxhkdrc /home/$username/.config/berry/sxhkdrc
+sudo chmod +x /home/$username/.config/berry/sxhkdrc
 cp examples/autostart /home/$username/.config/berry/autostart
+sudo chmod +x /home/$username/.config/berry/autostart
+
 cd ..
 
 
