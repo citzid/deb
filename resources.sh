@@ -31,8 +31,8 @@ xdg-user-dirs-update
 
 ##################################################################################
 ##RUN login window
-sudo systemctl start ly
-sudo systemctl enable ly
+#sudo systemctl start ly
+#sudo systemctl enable ly
 
 
 printf "\e[1;32mMade by @citz_id : Done!! please reboot.Type 'sudo reboot' enter.\e[0m\n"
