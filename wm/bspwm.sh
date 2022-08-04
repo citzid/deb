@@ -27,9 +27,9 @@ cd /home/$username/.config
 mkdir -p bspwm sxhkd
 
 cd /home/$username/deb/wm
-cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/bspwmrc
-cp /usr/share/doc/bspwm/examples/sxhkd /home/$username/.config/sxhkd/sxhkdrc
-cp /usr/share/doc/polybar/config /home/$username/.config/polybar/config
+cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
+cp /usr/share/doc/polybar/config /home/$username/.config/polybar/
 cp .xinitrc /home/$username/
 
 chmod +x /home/$username/.config/bspwm/bspwmrc
