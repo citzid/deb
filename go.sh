@@ -14,14 +14,14 @@ chmod +x alacritty.sh berry.sh berry.desktop packages.sh polybar.sh resources.sh
 echo "This script is about to run another script."
 ./berry.sh
 echo "BerryWm installed."
-#./alacritty.sh
-#echo "Alacritty installed."
-#./polybar.sh
-#echo "Polybar installed."
 ./packages.sh
 echo "Your Packages installed."
 ./resources.sh
 echo "Your resources installed."
+#./alacritty.sh
+#echo "Alacritty installed."
+#./polybar.sh
+#echo "Polybar installed."
 
 ##NOTE##
 #uncomment the rest script after BERRYWM run normally. And comment berrysh
