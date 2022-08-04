@@ -4,7 +4,9 @@ _This project is under construction_
 
 I asume you have been installed debian base with no GUI.
 
-Lets go 
+Lets go
+CHOOSE YOU FAVORITE WM
+
   ```
   $ git clone https://github.com/citzid/deb-berry-base.git && cd deb-berry-base
 
