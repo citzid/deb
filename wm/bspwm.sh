@@ -14,7 +14,7 @@ apt-get -y install libx11-dev libxft-dev libxinerama-dev
 
 ##################################################################################
 ##Online Install##
-sudo apt install -y bspwm sxhkd xorg
+sudo apt install -y bspwm sxhkd polybar xorg
 sudo apt autoremove -y lemonbar
 
 
