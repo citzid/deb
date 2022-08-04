@@ -39,12 +39,12 @@ apt-get install -y nitrogen
 #apt-get install -y variety
 
 ##################################################################################
-##Install theme setting
-apt-get install -y lxappearance sxhkd xorg xserver-xorg-video-intel
+##Install appearance setting
+apt-get install -y lxappearance 
 
 ##################################################################################
-##Install theme setting
-apt-get install -y unzip ranger arandr
+##Install other
+apt-get install -y unzip ranger arandr sxhkd xorg
 
 ##################################################################################
 ##Download Nordic Theme
