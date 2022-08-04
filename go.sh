@@ -16,8 +16,8 @@ echo "This script is about to run another script."
 echo "BerryWm installed."
 #./alacritty.sh
 #echo "Alacritty installed."
-./polybar.sh
-echo "Polybar installed."
+#./polybar.sh
+#echo "Polybar installed."
 ./packages.sh
 echo "Your Packages installed."
 ./resources.sh
@@ -25,4 +25,5 @@ echo "Your resources installed."
 
 ##NOTE##
 #uncomment the rest script after BERRYWM run normally. And comment berrysh
+#thats is my resource.sh you can open and edit to use you own resource git.
 
