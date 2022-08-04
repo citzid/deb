@@ -14,12 +14,14 @@ git clone https://github.com/citzid/icons.git
 git clone https://github.com/citzid/grubthemes.git
 
 ##################################################################################
-## Copy resources file
-cd $builddir
-#Create folders in user directory (eg. Documents,Downloads,etc.)#
-mkdir -p home/$username/Documents Downloads Music Pictures Videos
-mkdir -p home/$username/.config/bg fonts icons grubthemes
 
+#Create folders in user directory (eg. Documents,Downloads,etc.)#
+mkdir -p /home/$username/Documents Downloads Music Pictures Videos
+
+#Create config firectory
+mkdir -p /home/$username/.config/bg fonts icons grubthemes
+
+## Copy resources file
 cp -R bg/* /home/$username/.config/bg
 cp -R font/* /home/$username/.config/fonts
 cp -R icon/* /home/$username/.config/icons
@@ -30,8 +32,8 @@ xdg-user-dirs-update
 
 ##################################################################################
 ##RUN login window
-sudo systemctl start lightdm
-sudo systemctl enable lightdm
+sudo systemctl start ly
+sudo systemctl enable ly
 
 
 printf "\e[1;32mMade by @citz_id : Done!! please reboot.Type 'sudo reboot' enter.\e[0m\n"
