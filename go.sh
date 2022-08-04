@@ -26,7 +26,7 @@ echo "BerryWm installed."
 echo "Your resources installed."
 
 
-*##NOTE##*
+##NOTE##
 # i comment the rest script because not run normally. you can install manual.
 # you can open and edit _resource.sh_ to use you own resource git.
 
