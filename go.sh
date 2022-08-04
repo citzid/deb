@@ -22,6 +22,8 @@ echo "Your resources installed."
 #echo "Alacritty installed."
 #./polybar.sh
 #echo "Polybar installed."
+#./rofi.sh
+#echo "Polybar installed."
 
 ##NOTE##
 #uncomment the rest script after BERRYWM run normally. And comment berrysh
