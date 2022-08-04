@@ -21,8 +21,8 @@ echo "Your Packages Installed."
 ##################################################################################
 ##INSTALL DISPLAY MANAGER
 cd dm
-chmod +x ly.sh
-./ly.sh
+chmod +x tui.sh
+./tui.sh
 echo "Display Manager Installed."
 cd ..
 
@@ -36,27 +36,27 @@ cd ..
 
 ##################################################################################
 ##INSTALL TERMINAL EMULATOR
-cd te
-chmod +x alacritty.sh
-./alacritty.sh
-echo "Alacritty installed."
-cd ..
+#cd te
+#chmod +x alacritty.sh
+#./alacritty.sh
+#echo "Alacritty installed."
+#cd ..
 
 ##################################################################################
 ##INSTALL PANEL/BAR
-cd bar
-chmod +x polybar.sh
-./polybar.sh
-echo "Polybar installed."
-cd ..
+#cd bar
+#chmod +x polybar.sh
+#./polybar.sh
+#echo "Polybar installed."
+#cd ..
 
 ##################################################################################
 ##INSTALL MENU LAUNCHER
-cd mn
-chmod +x rofi.sh
-./rofi.sh
-echo "Rofi installed."
-cd ..
+#cd mn
+#chmod +x rofi.sh
+#./rofi.sh
+#echo "Rofi installed."
+#cd ..
 
 ##################################################################################
 ##INSTALL RESOURCES GIT
