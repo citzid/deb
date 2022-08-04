@@ -1,10 +1,8 @@
 #!/bin/bash
 #RUN this after installing base Debian with no GUI and install git
 #Made by @citz_id
-
 username=$(id -u -n 1000)
-builddir=$(pwd)
-apt update
+
 
 ##################################################################################
 ## Clone my resources file (if you have own resources, you can edit this) ##
@@ -14,18 +12,19 @@ git clone https://github.com/citzid/icons.git
 git clone https://github.com/citzid/grubthemes.git
 
 ##################################################################################
-
+cd 
 #Create folders in user directory (eg. Documents,Downloads,etc.)#
-mkdir -p /home/$username/Documents Downloads Music Pictures Videos
+cd /home/$username
+mkdir -p Documents Downloads Music Pictures Videos
 
 #Create config firectory
-mkdir -p /home/$username/.config/bg fonts icons grubthemes
+cd /home/$username/deb
 
 ## Copy resources file
-cp -R bg/* /home/$username/.config/bg
-cp -R font/* /home/$username/.config/fonts
-cp -R icon/* /home/$username/.config/icons
-cp -R grubthemes/* /home/$username/grubthemes
+cp -R bg /home/$username/.config/
+cp -R font /home/$username/.config/
+cp -R icon /home/$username/.config/
+cp -R grubthemes /home/$username/.config/
 
 chown -R $username:$username /home/$username
 xdg-user-dirs-update
