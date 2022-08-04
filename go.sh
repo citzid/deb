@@ -14,11 +14,13 @@ chmod +x .xinitrc alacritty.sh berry.sh berry.desktop packages.sh polybar.sh res
 echo "This script is about to run another script."
 ./packages.sh
 echo "Your Packages installed."
-./berry.sh
+./sway.sh
 echo "BerryWm installed."
 #./alacritty.sh
 #echo "Alacritty installed."
 #./polybar.sh
+#echo "Polybar installed."
+#./rofi.sh
 #echo "Polybar installed."
 #./rofi.sh
 #echo "Polybar installed."
