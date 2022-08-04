@@ -28,7 +28,7 @@ apt-get -y install libx11-dev libxft-dev libxinerama-dev
 #Offline Install berry wm#
 dpkg -i pkg/berry_0.1.11-1_amd64_bullseye.deb
 
-#setup
+#setup configuration
 mkdir -p ~/.config
 mkdir -p ~/.config/berry
 cd home/$username
