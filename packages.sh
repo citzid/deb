@@ -35,7 +35,7 @@ apt-get install -y nitrogen
 
 ##################################################################################
 ##Install theme setting
-apt-get install -y lxappearance sxhkd
+apt-get install -y lxappearance sxhkd xorg xserver-xorg-video-intel
 ##################################################################################
 ##Install theme setting
 apt-get install -y unzip ranger arandr
