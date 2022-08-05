@@ -59,9 +59,9 @@ cd ..
 
 ##################################################################################
 ##INSTALL RESOURCES GIT
-chmod +x resources.sh
-./resources.sh
-echo "Your resources installed."
+#chmod +x resources.sh
+#./resources.sh
+#echo "Your resources installed."
 
 
 ##NOTE##
