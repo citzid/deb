@@ -7,6 +7,7 @@
 ##Change repo Debian to SID 
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 cp sources.list /etc/apt/sources.list
+apt update && apt upgrade -y
 
 ##################################################################################
 ##INSTALL PACKAGES
