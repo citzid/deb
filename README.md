@@ -8,26 +8,26 @@ Lets go
 
 1. Clone repo
     ```
-    $ git clone https://github.com/citzid/deb.git && cd deb
+    git clone https://github.com/citzid/deb.git && cd deb
     ```
   
 2. Choose your favorite Window Manager
     ```
-    $ sudo chmod +x swayinstall.sh
-    $ sudo ./swayinstall.sh
+    sudo chmod +x swayinstall.sh
+    sudo ./swayinstall.sh
     ```
 
     or
     ```
-    $ sudo chmod +x i3install.sh
-    $ sudo ./i3install.sh
+    sudo chmod +x i3install.sh
+    sudo ./i3install.sh
     ```
 
 
     or
     ```
-    $ sudo chmod +x bspwminstall.sh
-    $ sudo ./bspwminstall.sh
+    sudo chmod +x bspwminstall.sh
+    sudo ./bspwminstall.sh
     ```
 
 key bind :
