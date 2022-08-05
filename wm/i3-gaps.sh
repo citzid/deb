@@ -5,6 +5,7 @@
 ##########################################################################
 ##
 sudo apt purge i3 i3-wm
+apt install i3-wm
 
 
 sudo apt-get install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev
