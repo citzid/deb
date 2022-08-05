@@ -10,6 +10,7 @@ username=$(id -u -n 1000)
 ##################################################################################
 ##Install Dependencies##
 sudo apt install -y nitrogen
+sudo apt install -y dunst
 sudo apt install -y fonts-font-awesome
 sudo apt install -y rofi
 sudo apt install -y pulseaudio-utils
