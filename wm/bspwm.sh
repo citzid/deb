@@ -29,7 +29,7 @@ mkdir -p bspwm sxhkd polybar
 cd /home/$username/deb/wm
 cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/
-cp /usr/share/doc/polybar/examples/config /home/$username/.config/polybar/
+cp /usr/share/doc/polybar/examples/config.ini /home/$username/.config/polybar/
 cp .xinitrc /home/$username/
 
 chmod +x /home/$username/.config/bspwm/bspwmrc
