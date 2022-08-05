@@ -50,13 +50,13 @@ case $1 in
         # end fix
 
         # Keybindings
-        sxhkd -c /home/$username/.config/bspwm/bspwmrc &
+        sxhkd -c /home/$username/.config/sxhkd/sxhkdrc &
 
         # Create fifo pipe
         [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
         mkfifo "$PANEL_FIFO"
 
-        exec dbus-launch bspwm -c /home/glindste/.config/bspwm/bspwmrc -s "$PANEL_FIFO" -p W 2> ~/.bspwm.log
+        exec dbus-launch bspwm -c /home/$username/.config/bspwm/bspwmrc -s "$PANEL_FIFO" -p W 2> ~/.bspwm.log
         ;;
     *)
         exec dbus-launch awesome
