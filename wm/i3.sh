@@ -30,7 +30,7 @@ wget -O- https://baltocdn.com/i3-window-manager/signing.asc | gpg --dearmor > /e
 apt install apt-transport-https --yes
 echo "deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild/ all main" | sudo tee /etc/apt/sources.list.d/i3-autobuild.list
 apt update
-apt install -y i3 i3lock i3status suckless-tools dmenu
+apt install -y i3 i3-wm i3lock i3status suckless-tools dmenu
 
 
 mkdir -p ~/.config/i3/bin/
