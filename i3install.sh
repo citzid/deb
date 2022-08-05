@@ -19,8 +19,8 @@ echo "Your Packages Installed."
 ##################################################################################
 ##INSTALL DISPLAY MANAGER
 cd dm
-chmod +x ly.sh
-./ly.sh
+chmod +x lightdm.sh
+./lightdm.sh
 echo "Display Manager Installed."
 cd ..
 
