@@ -35,11 +35,11 @@ cd ..
 
 ##################################################################################
 ##INSTALL TERMINAL EMULATOR
-#cd te
-#chmod +x alacritty.sh
-#./alacritty.sh
-#echo "Alacritty installed."
-#cd ..
+cd te
+chmod +x alacritty.sh
+./alacritty.sh
+echo "Alacritty installed."
+cd ..
 
 ##################################################################################
 ##INSTALL PANEL/BAR
@@ -59,9 +59,9 @@ cd ..
 
 ##################################################################################
 ##INSTALL RESOURCES GIT
-#chmod +x resources.sh
-#./resources.sh
-#echo "Your resources installed."
+chmod +x resources.sh
+./resources.sh
+echo "Your resources installed."
 
 
 ##NOTE##
