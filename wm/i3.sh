@@ -9,8 +9,20 @@ username=$(id -u -n 1000)
 
 ##################################################################################
 ##Install Dependencies##
-sudo apt install -y nitrogen fonts-font-awesome rofi pulseaudio-utils alsa-tools clipit gcc locate acpi libnotify-bin i3blocks htop flameshoot
-
+sudo apt install -y nitrogen
+sudo apt install -y fonts-font-awesome
+sudo apt install -y rofi
+sudo apt install -y pulseaudio-utils
+sudo apt install -y alsa-tools
+sudo apt install -y clipit
+sudo apt install -y gcc
+sudo apt install -y locate
+sudo apt install -y acpi
+sudo apt install -y libnotify-bin
+sudo apt install -y i3blocks
+sudo apt install -y htop
+sudo apt install -y flameshoot
+sudo apt install -y ranger
 
 ##################################################################################
 ##Online Install##
