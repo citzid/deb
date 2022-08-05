@@ -68,7 +68,7 @@ apt-get install -y unzip ranger arandr
 ##################################################################################
 ##Install Audio setting
 
-apt-get install -y pulseaudio pulseaudio-alsa alsa-utils
+#apt-get install -y pulseaudio pulseaudio-alsa alsa-utils
 
 
 
