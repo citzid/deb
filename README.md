@@ -4,7 +4,7 @@
 DON'T install bspwm and sway because is still under construction.
 I3-GAPS wm script run normaly.
 
-AUTO INSTALL PKG (You can edit on pkg.sh & from <WM>install.sh)
+AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)
 1. alacritty
 2. brave browser
 3. thunar
@@ -103,7 +103,11 @@ key bind :
    ```$ xrandr ```
    ```$ xrandr -s (your monitor resolution)```
    
-   example: ```$ xrandr -s 1360x768```
+   example: 	```
+   		$ xrandr -s 1920x1080
+		$ xrandr -s 1366x768
+		
+		```
    
    
    ### OR ###
@@ -118,14 +122,17 @@ key bind :
 		3.open terminal	
 			```sudo nano .profile```
 			write in last line
-			```bash ~/.screenlayout/(your profilename).sh```
+			```bash /.screenlayout/(your profilename).sh```
    
 
 DONE... you can start build your own bspwm debian from this.
 -----------------------------------------------------------------------------------------------------
 
 Thanks to :
-1.Debian titus (for dotfile)
-2.Distro Tube
-3.ALL linux superuser youtuber
+1. Chris Titus
+2. Distro Tube (DTOS)
+3. Aditya Shakya (archcraft)
+3. ALL linux superuser youtuber
 -----------------------------------------------------------------------------------------------------
+
+*_feel free to fork this stupid project_*
