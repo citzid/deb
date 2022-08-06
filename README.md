@@ -65,12 +65,8 @@ Lets go <br />
       sudo chmod +x i3-gapsinstall.sh
       sudo ./i3-gapsinstall.sh
       ```
-   <br />
-   <br />
    *or*<br />
-   <br />
    BSPWM<br />
-   <br />
       ```bash
       sudo chmod +x bspwminstall.sh
       sudo ./bspwminstall.sh
@@ -94,11 +90,14 @@ _NOTE :_ <br />
       sudo su
       apt install sudo git
       ```
-      <br /> - add your username below %sudo <br />
+      <br /> 
+     - add your username below %sudo <br />
       ```bash
       nano etc/sudoers
       ```
-      example : ```bash johndoe <tab> ALL=(ALL) NOPASSWD:ALL```
+      <br />
+      example :<br />
+      ```bash johndoe <tab> ALL=(ALL) NOPASSWD:ALL```
       save, exit  
       <br />
 12. fix screen resolution on virtualbox <br />
@@ -109,7 +108,6 @@ _NOTE :_ <br />
       xrandr -s (your monitor resolution)
       ```
       <br />
-
       example:<br />
       ```bash
       xrandr -s 1920x1080
@@ -124,12 +122,11 @@ and run arandr, Choose resolution of your monitor.
 apply.<br />
 Then save your profile. <br /> 
 1. click _layout_<br /> 
-2. 2. click _save As_ . 
-3. write name whatever you want on _.screenlayout_ folder and 
-4. save. <br />  
-5. open terminal <br />
+2. click _save As_ . 
+3. write name whatever you want on _.screenlayout_ folder and save.
+4. open terminal <br />
 ```sudo nano .profile```
-6.write in last line
+5. write in last line
 ```bash /.screenlayout/(your profilename).sh```
 
 DONE... you can start build your own bspwm debian from this.<br />
