@@ -32,52 +32,41 @@ _do NOT grab the EDU download and this includes non-free and firmware_ <br />
 ##################################################################################<br />
 <br />
 Get started<br />
-	 ```sudo su```
-	 <br />
-   	 ```apt install git -y```
+	```sudo su```
+	```apt install git -y```
 	 
-Lets go  <br />
+Lets go	<br />
 
-1. Clone repo<br />
-    ```
-    git clone https://github.com/citzid/deb.git && cd deb
-    ```
-  <br />
+1. Clone repo <br />
+	    ```git clone https://github.com/citzid/deb.git && cd deb```
+	    <br />
 2. Choose your favorite Window Manager<br />
-<br />
-    SWAY<br />
-    ```
-    sudo chmod +x swayinstall.sh
-    sudo ./swayinstall.sh
-    ```
-<br />
-    or<br />
- <br />   
-    I3<br />
-    ```
-    sudo chmod +x i3install.sh
-    sudo ./i3install.sh
-    ```
-    <br />
-    <br />
-    or<br />
-    <br />
-    I3-GAPS<br />
-    ```
-    sudo chmod +x i3install.sh
-    sudo ./i3install.sh
-    ```
-<br />
-<br />
-    or<br />
-    <br />
-    BSPWM<br />
-    <br />
-    ```
-    sudo chmod +x bspwminstall.sh
-    sudo ./bspwminstall.sh
-    ```
-     <br />
+	    <br />
+	    SWAY<br />
+	    ```sudo chmod +x swayinstall.sh```
+	    ```sudo ./swayinstall.sh```
+	    <br />
+	    or<br />
+	    <br />   
+	    I3<br />
+	    ```sudo chmod +x i3install.sh```
+	    ```sudo ./i3install.sh```
+	    <br />
+	    <br />
+	    or<br />
+	    <br />
+	    I3-GAPS<br />
+	    ```sudo chmod +x i3install.sh```
+	    ```sudo ./i3install.sh```
+	    <br />
+	    <br />
+	    or<br />
+	    <br />
+	    BSPWM<br />
+	    <br />
+	    ```sudo chmod +x bspwminstall.sh```
+	    ```sudo ./bspwminstall.sh```
+	    <br />
 ----------------------------------------------------------------------------------------------------- <br />
 You can copy dotfiles folder to your .config folder <br />
  <br />
@@ -95,42 +84,40 @@ key bind : <br />
  <br />
 *NOTE :* <br />
 1. if error "user is not in the sudoers file". <br />
-        - install git and sudo<br />
-             ```
-	     $ sudo su
-	     $ apt install sudo git
-	     ```
+	- install git and sudo<br />
+             ```sudo su```
+	     ```apt install sudo git```
 	<br />
         - add your username below %sudo <br />
              ```$ nano etc/sudoers  ```
-                 example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```  <br />
-                 save, exit  
-		 <br />
+	example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```
+	save, exit  
+	<br />
         
 2. fix screen resolution on virtualbox <br />
   -open terminal 
   <br />
-   ```$ xrandr ```  <br />
-   ```$ xrandr -s (your monitor resolution)```
+   	```$ xrandr ```
+   	```$ xrandr -s (your monitor resolution)```
   <br />
    
   example:<br /> 	
-   		```$ xrandr -s 1920x1080```
-		```$ xrandr -s 1366x768```
+   	```$ xrandr -s 1920x1080```
+	```$ xrandr -s 1366x768```
    
-    
   ### OR ###
    
    
   install arandr<br />
-  ```$sudo apt install arandr```<br />
+  ```$sudo apt install arandr```
+  <br />
   and run arandr, Choose resolution of your monitor. apply.<br />
   Then save your profile. <br />
 		1. click _layout_<br />
 		2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save. <br />
 		3. open terminal	<br />
 			```sudo nano .profile```
-			write in last line<br />
+			write in last line<
 			```bash /.screenlayout/(your profilename).sh```
    
 
