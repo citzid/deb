@@ -16,8 +16,6 @@ echo -e "\e[1;36m Installing pkg.sh \e[0m"
 ./pkg.sh
 echo -e "\e[1;42m Your Packages Installed \e[0m"
 
-
-
 ##################################################################################
 ##INSTALL DISPLAY MANAGER
 cd dm
