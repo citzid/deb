@@ -13,11 +13,13 @@ AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
 6. nord themes<br />
 7. lxappearance unzip ranger arandr xfce4-settings nitrogen<br />
    <br />
+   
+   
+   
    ##################################################################################<br />
    I asume you have been installed debian base with no GUI.<br />
    Requirements<br />
    This install changes Debian to the SID (Dev) Branch<br />
-   <br />
    Download Debian non-free netinstall<br />
    <br />
    Install minimal debian and boot into system. Use the following Debian ISO as the base<br />
@@ -40,50 +42,40 @@ AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
 Lets go <br />
 
 1. Clone repo <br />
-   ```bash
-   git clone https://github.com/citzid/deb.git && cd deb
-   ```
+      ```bash
+      git clone https://github.com/citzid/deb.git && cd deb
+      ```
    <br />
 2. Choose your favorite Window Manager<br />
    <br />
    SWAY<br />
       ```bash
       sudo chmod +x swayinstall.sh
-      
       sudo ./swayinstall.sh
       ```
-   <br />
-   or<br />
-   <br />  
-   I3 <br />
+   *or*<br />
+   I3<br />
       ```bash
       sudo chmod +x i3install.sh
-      
       sudo ./i3install.sh
       ```
-   <br />
-   <br />
-   or<br />
-   <br />
+   *or*<br />
    I3-GAPS<br />
-      ```sh
-      sudo chmod +x i3install.sh
-      
-      sudo ./i3install.sh
+      ```bash
+      sudo chmod +x i3-gapsinstall.sh
+      sudo ./i3-gapsinstall.sh
       ```
    <br />
    <br />
-   or<br />
+   *or*<br />
    <br />
    BSPWM<br />
    <br />
-      ```sh
+      ```bash
       sudo chmod +x bspwminstall.sh
-      
       sudo ./bspwminstall.sh
       ```
-   <br />
-   
+      
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 key bind : <br />  
 1. super + enter = alacritty <br />
@@ -98,7 +90,7 @@ key bind : <br />
 _NOTE :_ <br />
 11. if error "user is not in the sudoers file". <br />
     - install git and sudo<br />
-      ```
+      ```bash
       sudo su
       apt install sudo git
       ```
@@ -118,17 +110,18 @@ _NOTE :_ <br />
       ```
       <br />
 
-example:<br />
-```bash
-xrandr -s 1920x1080
-xrandr -s 1366x768
-```
+      example:<br />
+      ```bash
+      xrandr -s 1920x1080
+      xrandr -s 1366x768
+      ```
 ### OR
 
 install arandr<br />
 ```sudo apt install arandr```
 <br />
-and run arandr, Choose resolution of your monitor. apply.<br />
+and run arandr, Choose resolution of your monitor.
+apply.<br />
 Then save your profile. <br /> 
 1. click _layout_<br /> 
 2. 2. click _save As_ . 
@@ -137,7 +130,7 @@ Then save your profile. <br />
 5. open terminal <br />
 ```sudo nano .profile```
 6.write in last line
-```bash bash /.screenlayout/(your profilename).sh```
+```bash /.screenlayout/(your profilename).sh```
 
 DONE... you can start build your own bspwm debian from this.<br />
 -----------------------------------------------------------------------------------------------------<br />
