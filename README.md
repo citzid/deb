@@ -103,10 +103,10 @@ key bind :
    ```$ xrandr ```
    ```$ xrandr -s (your monitor resolution)```
    
-   example: 	```
-   		$ xrandr -s 1920x1080
-		$ xrandr -s 1366x768
-		
+   example: 	
+   		```
+   		```$ xrandr -s 1920x1080```
+		```$ xrandr -s 1366x768```
 		```
    
    
