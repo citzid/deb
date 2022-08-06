@@ -1,5 +1,6 @@
 
 *##NOTE##*
+
 DON'T install bspwm and sway is under because still under construction.
 I3-GAPS wm script run normaly.
 
