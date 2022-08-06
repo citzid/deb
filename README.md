@@ -1,7 +1,7 @@
 
 *##NOTE##*
 
-DON'T install bspwm and sway is under because still under construction.
+DON'T install bspwm and sway because is still under construction.
 I3-GAPS wm script run normaly.
 
 AUTO INSTALL PKG (You can edit on pkg.sh & from <WM>install.sh)
