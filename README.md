@@ -4,7 +4,34 @@
 DON'T install bspwm and sway is under because still under construction.
 I3-GAPS wm script run normaly.
 
+AUTO INSTALL PKG (You can edit on pkg.sh & from <WM>install.sh)
+1. alacritty
+2. brave browser
+3. thunar
+4. geany
+5. polybar
+6. nord themes
+7. lxappearance unzip ranger arandr xfce4-settings nitrogen
+
+##################################################################################
 I asume you have been installed debian base with no GUI.
+Requirements
+This install changes Debian to the SID (Dev) Branch
+
+Download Debian non-free netinstall
+
+Install minimal debian and boot into system. Use the following Debian ISO as the base https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
+
+or
+
+Debian 11 non-free https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/
+
+_do NOT grab the EDU download and this includes non-free and firmware_
+##################################################################################
+
+Get started
+	$ sudo su
+   	$ apt install git -y
 Lets go 
 
 1. Clone repo
@@ -44,6 +71,9 @@ Lets go
     sudo chmod +x bspwminstall.sh
     sudo ./bspwminstall.sh
     ```
+-----------------------------------------------------------------------------------------------------
+You can copy dotfiles folder to your .config folder
+
 
 key bind :
 1. super + enter = alacritty
@@ -54,5 +84,48 @@ key bind :
 6. super + space = dmenu run
 7. ctrl + shift + r = restart WM
 8. ctrl + shift + c = reload config
+-----------------------------------------------------------------------------------------------------
 
+*NOTE :*
+1. if error "user is not in the sudoers file".
+        - install git and sudo
+             ```
+	     $ sudo su
+	     $ apt install sudo git 
+	     ```
+        - add your username below %sudo 
+             ```$ nano etc/sudoers  ```
+                 example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```
+                 save, exit
+        
+2. fix screen resolution on virtualbox
+  -open terminal
+   ```$ xrandr ```
+   ```$ xrandr -s (your monitor resolution)```
+   
+   example: ```$ xrandr -s 1360x768```
+   
+   
+   ### OR ###
+   
+   
+   install arandr
+   ```$sudo apt install arandr```
+   and run arandr, Choose resolution of your monitor. apply.
+   Then save your profile. 
+		1.click _layout_
+		2.click _save As_ . write name whatever you want on _.screenlayout_ folder and save.
+		3.open terminal	
+			```sudo nano .profile```
+			write in last line
+			```bash ~/.screenlayout/(your profilename).sh```
+   
 
+DONE... you can start build your own bspwm debian from this.
+-----------------------------------------------------------------------------------------------------
+
+Thanks to :
+1.Debian titus (for dotfile)
+2.Distro Tube
+3.ALL linux superuser youtuber
+-----------------------------------------------------------------------------------------------------
