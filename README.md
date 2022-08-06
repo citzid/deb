@@ -1,138 +1,144 @@
 
-*##NOTE##*
+*##NOTE##*<br />
+<br />
+DON'T install bspwm and sway because is still under construction.<br />
+I3-GAPS wm script run normaly.<br />
+<br />
+AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
+1. alacritty<br />
+2. brave browser<br />
+3. thunar<br />
+4. geany<br />
+5. polybar<br />
+6. nord themes<br />
+7. lxappearance unzip ranger arandr xfce4-settings nitrogen<br />
+<br />
+##################################################################################<br />
+I asume you have been installed debian base with no GUI.<br />
+Requirements<br />
+This install changes Debian to the SID (Dev) Branch<br />
+<br />
+Download Debian non-free netinstall<br />
+<br />
+Install minimal debian and boot into system. Use the following Debian ISO as the base<br />
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
+<br />
+or<br />
+<br />
+Debian 11 non-free <br />
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/ <br />
+<br />
+_do NOT grab the EDU download and this includes non-free and firmware_<br />
+##################################################################################<br />
+<br />
+Get started<br />
+	 ```
+	 $ sudo su <br />
+   	 $ apt install git -y<br /> 
+	 ```
+	 
+Lets go  <br />
 
-DON'T install bspwm and sway because is still under construction.
-I3-GAPS wm script run normaly.
-
-AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)
-1. alacritty
-2. brave browser
-3. thunar
-4. geany
-5. polybar
-6. nord themes
-7. lxappearance unzip ranger arandr xfce4-settings nitrogen
-
-##################################################################################
-I asume you have been installed debian base with no GUI.
-Requirements
-This install changes Debian to the SID (Dev) Branch
-
-Download Debian non-free netinstall
-
-Install minimal debian and boot into system. Use the following Debian ISO as the base https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
-
-or
-
-Debian 11 non-free https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/
-
-_do NOT grab the EDU download and this includes non-free and firmware_
-##################################################################################
-
-Get started
-	$ sudo su
-   	$ apt install git -y
-Lets go 
-
-1. Clone repo
+1. Clone repo<br />
     ```
     git clone https://github.com/citzid/deb.git && cd deb
     ```
-  
-2. Choose your favorite Window Manager
-
-    SWAY
+  <br />
+2. Choose your favorite Window Manager<br />
+<br />
+    SWAY<br />
     ```
-    sudo chmod +x swayinstall.sh
-    sudo ./swayinstall.sh
+    sudo chmod +x swayinstall.sh <br />
+    sudo ./swayinstall.sh <br />
     ```
-
-    or
-    
-    I3
+<br />
+    or<br />
+ <br />   
+    I3<br />
     ```
-    sudo chmod +x i3install.sh
-    sudo ./i3install.sh
+    sudo chmod +x i3install.sh <br />
+    sudo ./i3install.sh <br />
     ```
-    
-    or
-    
-    I3-GAPS
+    <br />
+    <br />
+    or<br />
+    <br />
+    I3-GAPS<br />
     ```
-    sudo chmod +x i3install.sh
-    sudo ./i3install.sh
+    sudo chmod +x i3install.sh <br />
+    sudo ./i3install.sh <br />
     ```
-
-
-    or
-    
-    BSPWM
+<br />
+<br />
+    or<br />
+    <br />
+    BSPWM<br />
+    <br />
     ```
-    sudo chmod +x bspwminstall.sh
-    sudo ./bspwminstall.sh
+    sudo chmod +x bspwminstall.sh <br />
+    sudo ./bspwminstall.sh  <br />
     ```
------------------------------------------------------------------------------------------------------
-You can copy dotfiles folder to your .config folder
-
-
-key bind :
-1. super + enter = alacritty
-2. super + b = firefox
-3. super + f = thunar
-4. super + e = geany
-5. super + q = kill (close app)
-6. super + space = dmenu run
-7. ctrl + shift + r = restart WM
-8. ctrl + shift + c = reload config
------------------------------------------------------------------------------------------------------
-
-*NOTE :*
-1. if error "user is not in the sudoers file".
-        - install git and sudo
+     <br />
+----------------------------------------------------------------------------------------------------- <br />
+You can copy dotfiles folder to your .config folder <br />
+ <br />
+ <br />
+key bind : <br />
+1. super + enter = alacritty <br />
+2. super + b = firefox <br />
+3. super + f = thunar <br />
+4. super + e = geany <br />
+5. super + q = kill (close app) <br />
+6. super + space = dmenu run <br />
+7. ctrl + shift + r = restart WM <br />
+8. ctrl + shift + c = reload config<br />
+----------------------------------------------------------------------------------------------------- <br />
+ <br />
+*NOTE :* <br />
+1. if error "user is not in the sudoers file". <br />
+        - install git and sudo<br />
              ```
-	     $ sudo su
-	     $ apt install sudo git 
+	     $ sudo su  <br />
+	     $ apt install sudo git   <br />
 	     ```
-        - add your username below %sudo 
+        - add your username below %sudo <br />
              ```$ nano etc/sudoers  ```
                  example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```
                  save, exit
         
-2. fix screen resolution on virtualbox
-  -open terminal
-   ```$ xrandr ```
-   ```$ xrandr -s (your monitor resolution)```
+2. fix screen resolution on virtualbox<br />
+  -open terminal<br />
+   ```$ xrandr ```<br />
+   ```$ xrandr -s (your monitor resolution)```<br />
    
-   example: 	
-   		```
-   		```$ xrandr -s 1920x1080```
-		```$ xrandr -s 1366x768```
-		```
+   example:<br /> 	
+   		```$ xrandr -s 1920x1080```<br />
+		```$ xrandr -s 1366x768```<br />
    
    
    ### OR ###
    
    
-   install arandr
-   ```$sudo apt install arandr```
-   and run arandr, Choose resolution of your monitor. apply.
-   Then save your profile. 
-		1.click _layout_
-		2.click _save As_ . write name whatever you want on _.screenlayout_ folder and save.
-		3.open terminal	
-			```sudo nano .profile```
-			write in last line
-			```bash /.screenlayout/(your profilename).sh```
+   install arandr<br />
+   ```$sudo apt install arandr```<br />
+   and run arandr, Choose resolution of your monitor. apply.<br />
+   Then save your profile. <br />
+		1. click _layout_<br />
+		2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save.<br />
+		3. open terminal	<br />
+			```sudo nano .profile```<br />
+			write in last line<br />
+			```bash /.screenlayout/(your profilename).sh```<br />
    
 
-DONE... you can start build your own bspwm debian from this.
------------------------------------------------------------------------------------------------------
-
-Thanks to :
-1. Chris Titus
-2. Distro Tube (DTOS)
-3. Aditya Shakya (archcraft)
-3. ALL linux superuser youtuber
------------------------------------------------------------------------------------------------------
+DONE... you can start build your own bspwm debian from this.<br />
+-----------------------------------------------------------------------------------------------------<br />
+<br />
+Thanks to :<br />
+1. Chris Titus<br />
+2. Distro Tube (DTOS)<br />
+3. Aditya Shakya (archcraft)<br />
+3. ALL linux superuser youtuber<br />
+-----------------------------------------------------------------------------------------------------<br />
 
 *_feel free to fork this stupid project_*
