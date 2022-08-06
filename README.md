@@ -12,12 +12,16 @@ Lets go
     ```
   
 2. Choose your favorite Window Manager
+
+    SWAY
     ```
     sudo chmod +x swayinstall.sh
     sudo ./swayinstall.sh
     ```
 
     or
+    
+    I3-GAPS
     ```
     sudo chmod +x i3install.sh
     sudo ./i3install.sh
@@ -25,6 +29,8 @@ Lets go
 
 
     or
+    
+    BSPWM
     ```
     sudo chmod +x bspwminstall.sh
     sudo ./bspwminstall.sh
