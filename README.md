@@ -1,45 +1,43 @@
-_NOTE_<br />
+### _NOTE_<br />
 <br />
 DON'T install bspwm and sway because is still under construction.<br />
-I3-GAPS wm script run normaly.<br />
+I3-GAPS wm script run normal.<br />
 <br />
-AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
 
-1. alacritty<br />
-2. brave browser<br />
-3. thunar<br />
-4. geany<br />
-5. polybar<br />
-6. nord themes<br />
-7. lxappearance unzip ranger arandr xfce4-settings nitrogen<br />
-   <br />
-   
-   
-   
-   ##################################################################################<br />
-   I asume you have been installed debian base with no GUI.<br />
-   Requirements<br />
-   This install changes Debian to the SID (Dev) Branch<br />
-   Download Debian non-free netinstall<br />
-   <br />
-   Install minimal debian and boot into system. Use the following Debian ISO as the base<br />
-   https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
-   <br />
-   or<br />
-   <br />
-   Debian 11 non-free <br />
-   https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/ <br />
-   <br />
-   _do NOT grab the EDU download and this includes non-free and firmware_ <br />
-   ##################################################################################<br />
-   <br />
-   Get started<br />
-   ```bash
+### AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
+  1. alacritty
+  2. brave browser
+  3. thunar
+  4. geany
+  5. polybar
+  6. nord themes
+  7. lxappearance unzip ranger arandr xfce4-settings nitrogen
+      
+##################################################################################<br />
+### I asume you have been installed debian base with no GUI.<br />
+Requirements
+This install changes Debian to the SID (Dev) Branch<br />
+Download Debian non-free netinstall<br />
+    
+### Install minimal debian and boot into system. 
+Use the following Debian ISO as the base<br />
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
+    
+or
+
+Debian 11 non-free <br />
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/ <br />
+<br />
+_do NOT grab the EDU download and this includes non-free and firmware_ <br />
+##################################################################################<br />
+<br />
+Get started<br />
+```bash
    sudo su
    apt install git -y
-   ```
+```
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-Lets go <br />
+### Lets go <br />
 
 1. Clone repo <br />
       ```bash
@@ -53,19 +51,16 @@ Lets go <br />
       sudo chmod +x swayinstall.sh
       sudo ./swayinstall.sh
       ```
-   *or*<br />
    I3<br />
       ```bash
       sudo chmod +x i3install.sh
       sudo ./i3install.sh
       ```
-   *or*<br />
    I3-GAPS<br />
       ```bash
       sudo chmod +x i3-gapsinstall.sh
       sudo ./i3-gapsinstall.sh
       ```
-   *or*<br />
    BSPWM<br />
       ```bash
       sudo chmod +x bspwminstall.sh
@@ -73,7 +68,7 @@ Lets go <br />
       ```
       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-key bind : <br />  
+### key bind : <br />  
 1. super + enter = alacritty <br />
 2. super + b = firefox <br />
 3. super + f = thunar <br />
@@ -83,7 +78,8 @@ key bind : <br />
 7. ctrl + shift + r = restart WM <br />
 8. ctrl + shift + c = reload config<br /><br /><br />
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-_NOTE :_ <br />
+
+### _NOTE :_ <br />
 11. if error "user is not in the sudoers file". <br />
     - install git and sudo<br />
       ```bash
@@ -132,7 +128,7 @@ Then save your profile. <br />
 DONE... you can start build your own bspwm debian from this.<br />
 -----------------------------------------------------------------------------------------------------<br />
 <br />
-Thanks to :<br />
+### Thanks to :<br />
 
 1. Chris Titus<br />
 2. Distro Tube (DTOS)<br />
