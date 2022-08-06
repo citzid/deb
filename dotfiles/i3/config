@@ -29,11 +29,10 @@ set_from_resource $warning    	 i3wm.color6  #de8990
 floating_modifier $mod
 
 # Polybar
-exec_always  ~/.config/polybar/launch.sh &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # set wallpaper
-exec_always --no-startup-id nitrogen --restore &
-#exec_always --no-startup-id sh .fehbg
+exec_always --no-startup-id nitrogen --restore
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -117,7 +116,15 @@ set $ws5  ""
 set $ws6  ""
 set $ws7  ""
 set $ws8  ""
-set $ws9  ""
+set $ws9  ""
+#;ws-icon-0 = ";"
+#;ws-icon-1 = ";"
+#;ws-icon-2 = ";"
+#;ws-icon-3 = ";"
+#;ws-icon-4 = ";"
+#;ws-icon-5 = ";"
+#;ws-icon-6 = ";"
+#;ws-icon-7 = ";"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -146,7 +153,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Ctrl+BackSpace reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Ctrl+r restart
+bindsym $ctrl+shift+r restart
 
 # Rofi power menu manager
 bindsym $mod+m exec --no-startup-id menu_mpd
@@ -192,28 +199,28 @@ client.urgent 				#00C1FF #00C1FF #000088 #00C1FF
 # Do not follow the mouse
 focus_follows_mouse no
 
-# Start i3bar to display a workspace bar (plus the system information i3status)
-# bar {
-#     i3bar_command     i3bar --transparency
-#     status_command    i3blocks
-#     position          top
-#     workspace_buttons yes
-#     separator_symbol "|"
-#     tray_output LVDS1
-#     font pango: play, fontawesome 9
-#     colors {
-#         background	#aa000000
-#         statusline	$foreground
-#         separator	$primary
+## Start i3bar to display a workspace bar (plus the system information i3status)
+#bar {
+    #i3bar_command     i3bar --transparency
+    #status_command    i3blocks
+    #position          top
+    #workspace_buttons yes
+    #separator_symbol "|"
+    #tray_output LVDS1
+    #font pango: play, fontawesome 9
+    #colors {
+        #background	#aa000000
+        #statusline	$foreground
+        #separator	$primary
         
-#         # <border name>		<border>	<background>	<text>
-#         focused_workspace	#aa000000  	#aa000000 		#E710F5
-#         active_workspace	#aa000000 	#aa000000  		#7C2FAB
-#         inactive_workspace	#aa000000	#aa000000 		#90EE90
-#         urgent_workspace	#aa000000  	#900000 		#000000
-#         binding_mode		#aa000000 	#900000 		#000000
-#     }
-# }
+        ## <border name>		<border>	<background>	<text>
+        #focused_workspace	#aa000000  	#aa000000 		#E710F5
+        #active_workspace	#aa000000 	#aa000000  		#7C2FAB
+        #inactive_workspace	#aa000000	#aa000000 		#90EE90
+        #urgent_workspace	#aa000000  	#900000 		#000000
+        #binding_mode		#aa000000 	#900000 		#000000
+    #}
+#}
 
 ########################################################################
 # disable window titlebars
@@ -283,6 +290,5 @@ mode "$mode_gaps_outer" {
 
 
 # for_window [class=".*"] floating enable
-for_window [class=Thunar|Geany] floating enable border pixel 1 color #90EE90
 for_window [class=Alacritty|Termite|Kitty|Geany] floating disable border pixel 1
 
