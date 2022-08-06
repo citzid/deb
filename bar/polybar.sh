@@ -1,6 +1,8 @@
 #!/bin/bash
 #RUN this after installing base Debian with no GUI and install git
 #Made by @citz_id
+username=$(id -u -n 1000)
+
 
 ##################################################################################
 ##Install Polybar Panel
@@ -17,4 +19,6 @@ git clone https://github.com/jaagr/polybar.git
 
 #Build#
 cd polybar && ./build.sh
+
+
 

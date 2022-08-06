@@ -4,7 +4,7 @@ set $ctrl Control
 
 ########################################################################
 #AUTOSTART
-exec picom &
+exec picom -f
 exec xsettingsd
 exec xfce4-power-manager
 
@@ -193,27 +193,27 @@ client.urgent 				#00C1FF #00C1FF #000088 #00C1FF
 focus_follows_mouse no
 
 # Start i3bar to display a workspace bar (plus the system information i3status)
-bar {
-    i3bar_command     i3bar --transparency
-    status_command    i3blocks
-    position          top
-    workspace_buttons yes
-    separator_symbol "|"
-    tray_output LVDS1
-    font pango: play, fontawesome 9
-    colors {
-        background	#aa000000
-        statusline	$foreground
-        separator	$primary
+# bar {
+#     i3bar_command     i3bar --transparency
+#     status_command    i3blocks
+#     position          top
+#     workspace_buttons yes
+#     separator_symbol "|"
+#     tray_output LVDS1
+#     font pango: play, fontawesome 9
+#     colors {
+#         background	#aa000000
+#         statusline	$foreground
+#         separator	$primary
         
-        # <border name>		<border>	<background>	<text>
-        focused_workspace	#aa000000  	#aa000000 		#E710F5
-        active_workspace	#aa000000 	#aa000000  		#7C2FAB
-        inactive_workspace	#aa000000	#aa000000 		#90EE90
-        urgent_workspace	#aa000000  	#900000 		#000000
-        binding_mode		#aa000000 	#900000 		#000000
-    }
-}
+#         # <border name>		<border>	<background>	<text>
+#         focused_workspace	#aa000000  	#aa000000 		#E710F5
+#         active_workspace	#aa000000 	#aa000000  		#7C2FAB
+#         inactive_workspace	#aa000000	#aa000000 		#90EE90
+#         urgent_workspace	#aa000000  	#900000 		#000000
+#         binding_mode		#aa000000 	#900000 		#000000
+#     }
+# }
 
 ########################################################################
 # disable window titlebars

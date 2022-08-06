@@ -27,7 +27,8 @@ cp -R icons /home/$username/.config
 cp -R grubthemes /home/$username/.config
 cp -R dotfiles/* /home/$username/.config
 
-chown -R $username:$username /home/$username
+chown $username:$username /home/$username/
+chown $username:$username /home/$username/.config/*
 xdg-user-dirs-update
 
 ##################################################################################
