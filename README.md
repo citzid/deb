@@ -32,9 +32,10 @@ _do NOT grab the EDU download and this includes non-free and firmware_ <br />
 ##################################################################################<br />
 <br />
 Get started<br />
+	```
 	```sudo su```
 	```apt install git -y```
-	 
+	```
 Lets go	<br />
 
 1. Clone repo <br />
@@ -117,7 +118,7 @@ key bind : <br />
 		2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save. <br />
 		3. open terminal	<br />
 			```sudo nano .profile```
-			write in last line<
+			write in last line
 			```bash /.screenlayout/(your profilename).sh```
    
 
