@@ -1,11 +1,14 @@
 set $mod mod4
 set $alt mod1
+set $ctrl Control
+
 ########################################################################
 #AUTOSTART
-exec --no-startup-id nitrogen --restore
-exec picom
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id nitrogen --restore &
+exec picom &
 exec --no-startup-id xsettingsd
+exec --no-startup-id xfce4-power-manager
+
 # set font
 font pango:play regular 10
 # Start shutter at startup
@@ -26,22 +29,15 @@ set_from_resource $warning     i3wm.color6  #de8990
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#autostart
-#exec --no-startup-id xfce4-power-manager
-#exec --no-startup-id compton
-#exec --no-startup-id nm-applet
-#exec --no-startup-id xrdb merge ~/.Xresources
-#exec --no-startup-id wal -R
-
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always  ~/.config/polybar/launch.sh &
 
 # set wallpaper
-exec --no-startup-id nitrogen --restore
-#exec --no-startup-id sh .fehbg
+exec_always --no-startup-id nitrogen --restore &
+#exec_always --no-startup-id sh .fehbg
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym --no-startup-id $mod+Return exec alacritty
 
 # start alternative terminal
 # bindsym $mod+Shift+Return exec termite
@@ -71,11 +67,14 @@ bindsym Print exec --no-startup-id scrot
 bindsym $mod+Print exec --no-startup-id scrot -u -b
 bindsym Control+Print exec --no-startup-id xfce4-screenshooter
 
-# program launcher
-bindsym $mod+d exec dmenu_run -i -nb "$background" -nf "$primary" -sb "$primary" -sf "$background" -fn 'iosevka Nerd Font:size=9' -x 35 -y 35 -w 700 -p 'Run ' -o 0.9 -h 27
-bindsym $mod+space exec wofi -show run
-# bindsym $mod+space exec rofi -show run
-# bindsym $mod+m exec urxvt -g 70x10 -e ncmpcpp -c ~/.ncmpcpp/ncmpcpp2
+# Dmenulauncher
+#bindsym $mod+d exec dmenu_run -i -nb "$background" -nf "$primary" -sb "$primary" -sf "$background" -fn 'iosevka Nerd Font:size=9' -x 35 -y 35 -w 700 -p 'Run ' -o 0.9 -h 27
+
+# Rofi launcher
+bindsym $mod+space exec rofi -show run
+
+# run NCMPCPP player
+#bindsym $mod+m exec alacritty -g 70x10 -e ncmpcpp -c ~/.ncmpcpp/ncmpcpp2
 
 # change focus
 bindsym $mod+Control+Left focus left
@@ -146,28 +145,30 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 
 # reload the configuration file
 bindsym $mod+Ctrl+BackSpace reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Ctrl+r restart
+
 # Rofi power menu manager
 bindsym $mod+m exec --no-startup-id menu_mpd
 bindsym $mod+n exec --no-startup-id menu_network
-bindsym $mod+p exec --no-startup-id /home/citz/.local/bin/rofi-power-menu/
+bindsym $mod+p exec --no-startup-id ~/.local/bin/rofi-power-menu/
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+Delete exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+#mode "resize" {
+        #bindsym Left resize shrink width 10 px or 10 ppt
+        #bindsym Down resize grow height 10 px or 10 ppt
+        #bindsym Up resize shrink height 10 px or 10 ppt
+        #bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym Tab mode "default"
-}
+        ## back to normal: Enter or Escape
+        #bindsym Return mode "default"
+        #bindsym Escape mode "default"
+        #bindsym Tab mode "default"
+#}
 #mode "gaps" {
 #        bindsym Down gaps inner all minus 2
 #        bindsym Left gaps outer all minus 2
@@ -183,7 +184,7 @@ mode "resize" {
 bindsym $mod+Shift+g mode "gaps"
 bindsym $mod+Shift+r mode "resize"
 
-# colors                BORDER      BACKGROUND TEXT        INDICATOR
+# colors                BORDER       BACKGROUND   TEXT         INDICATOR
 client.focused          $background  $background  $primary     $primary
 client.focused_inactive $background  $background  $tertiary    $tertiary
 client.unfocused        $background  $background  $secondary   $secondary
@@ -191,37 +192,38 @@ client.urgent           $red         $red         $foreground  $red
 
 # Start i3bar to display a workspace bar (plus the system information i3status)
 bar {
-    i3bar_command     i3bar  
+    i3bar_command     i3bar --transparency
     status_command    i3blocks
     position          top
     workspace_buttons yes
     separator_symbol "|"
     tray_output LVDS1
-    font pango: iosevka Nerd Font, fontawesome 9
+    font pango: play, fontawesome 9
     colors {
-        background $background
-        statusline $foreground
-        separator $primary
+        background	#aa000000
+        statusline	$foreground
+        separator	$primary
         
-        # <border name>		<border>		<background>		<text>
-        focused_workspace	$primary		$primary		$background
-        active_workspace	$background		$background		$secondary
-        inactive_workspace	$background		$background		$secondary
-        urgent_workspace	$background		$background		$tertiary
+        # <border name>		<border>	<background>	<text>
+        focused_workspace	#aa000000  	#aa000000 		#E710F5
+        active_workspace	#aa000000 	#aa000000  		#7C2FAB
+        inactive_workspace	#aa000000	#aa000000 		#90EE90
+        urgent_workspace	#aa000000  	#900000 		#000000
+        binding_mode		#aa000000 	#900000 		#000000
     }
 }
 
 ########################################################################
-##############################GAPS######################################
-# gaps
 # disable window titlebars
 for_window [class="^.*"] border pixel 0
 
+##############################GAPS######################################
+# gaps
 gaps inner 6
 gaps outer 2
 
-bindsym $mod+Shift+g gaps inner all set 6; gaps outer all set 2
-bindsym $mod+Shift+n gaps inner all set 0; gaps outer all set 0
+bindsym $ctrl+$alt+g gaps inner all set 6; gaps outer all set 2
+bindsym $ctrl+$alt+n gaps inner all set 0; gaps outer all set 0
 
 # Only enable gaps on a workspace when there is at least one container
 smart_gaps on
