@@ -32,56 +32,64 @@ AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
    ##################################################################################<br />
    <br />
    Get started<br />
-   $ sudo su
-   $ apt install git -y
+   ```
+   sudo su
+   apt install git -y
+   ```
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Lets go <br />
 
 1. Clone repo <br />
-   $ git clone https://github.com/citzid/deb.git && cd deb
+   ```
+   git clone https://github.com/citzid/deb.git && cd deb
+   ```
    <br />
 2. Choose your favorite Window Manager<br />
    <br />
    SWAY<br />
-   $ sudo chmod +x swayinstall.sh
-   $ sudo ./swayinstall.sh
+   ```
+   sudo chmod +x swayinstall.sh
+   sudo ./swayinstall.sh
+   ```
    <br />
    or<br />
    <br />  
-    I3<br />
-   $ sudo chmod +x i3install.sh
-   $ sudo ./i3install.sh
+   I3<br />
+   ```
+   sudo chmod +x i3install.sh
+   sudo ./i3install.sh
+   ```
    <br />
    <br />
    or<br />
    <br />
    I3-GAPS<br />
-   $ sudo chmod +x i3install.sh
-   $ sudo ./i3install.sh
+   ```
+   sudo chmod +x i3install.sh
+   sudo ./i3install.sh
+   ```
    <br />
    <br />
    or<br />
    <br />
    BSPWM<br />
    <br />
-   $ sudo chmod +x bspwminstall.sh
-   $ sudo ./bspwminstall.sh
+   ```
+   sudo chmod +x bspwminstall.sh
+   sudo ./bspwminstall.sh
+   ```
    <br />
-   ------------------------------------------------------------------------------------------------------------------------------------------------------
-   You can copy dotfiles folder to your .config folder <br />
-   <br />
-   <br />
-   key bind : <br />
-3. super + enter = alacritty <br />
-4. super + b = firefox <br />
-5. super + f = thunar <br />
-6. super + e = geany <br />
-7. super + q = kill (close app) <br />
-8. super + space = dmenu run <br />
-9. ctrl + shift + r = restart WM <br />
-10. ctrl + shift + c = reload config<br />
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-      <br />
+key bind : <br />  
+1. super + enter = alacritty <br />
+2. super + b = firefox <br />
+3. super + f = thunar <br />
+4. super + e = geany <br />
+5. super + q = kill (close app) <br />
+6. super + space = dmenu run <br />
+7. ctrl + shift + r = restart WM <br />
+8. ctrl + shift + c = reload config<br /><br /><br />
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 _NOTE :_ <br />
 11. if error "user is not in the sudoers file". <br />
     - install git and sudo<br />
