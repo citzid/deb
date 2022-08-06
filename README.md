@@ -32,7 +32,7 @@ AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
    ##################################################################################<br />
    <br />
    Get started<br />
-   ```
+   ```bash
    sudo su
    apt install git -y
    ```
@@ -40,45 +40,50 @@ AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
 Lets go <br />
 
 1. Clone repo <br />
-   ```
+   ```bash
    git clone https://github.com/citzid/deb.git && cd deb
    ```
    <br />
 2. Choose your favorite Window Manager<br />
    <br />
    SWAY<br />
-   ```
-   sudo chmod +x swayinstall.sh
-   sudo ./swayinstall.sh
-   ```
+      ```bash
+      sudo chmod +x swayinstall.sh
+      
+      sudo ./swayinstall.sh
+      ```
    <br />
    or<br />
    <br />  
-   I3<br />
-   ```
-   sudo chmod +x i3install.sh
-   sudo ./i3install.sh
-   ```
+   I3 <br />
+      ```bash
+      sudo chmod +x i3install.sh
+      
+      sudo ./i3install.sh
+      ```
    <br />
    <br />
    or<br />
    <br />
    I3-GAPS<br />
-   ```
-   sudo chmod +x i3install.sh
-   sudo ./i3install.sh
-   ```
+      ```sh
+      sudo chmod +x i3install.sh
+      
+      sudo ./i3install.sh
+      ```
    <br />
    <br />
    or<br />
    <br />
    BSPWM<br />
    <br />
-   ```
-   sudo chmod +x bspwminstall.sh
-   sudo ./bspwminstall.sh
-   ```
+      ```sh
+      sudo chmod +x bspwminstall.sh
+      
+      sudo ./bspwminstall.sh
+      ```
    <br />
+   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 key bind : <br />  
 1. super + enter = alacritty <br />
@@ -93,34 +98,46 @@ key bind : <br />
 _NOTE :_ <br />
 11. if error "user is not in the sudoers file". <br />
     - install git and sudo<br />
-      $ sudo su
-      $ apt install sudo git
+      ```
+      sudo su
+      apt install sudo git
+      ```
       <br /> - add your username below %sudo <br />
-      $ nano etc/sudoers
-      example : $ johndoe <tab> ALL=(ALL) NOPASSWD:ALL
+      ```bash
+      nano etc/sudoers
+      ```
+      example : ```bash johndoe <tab> ALL=(ALL) NOPASSWD:ALL```
       save, exit  
       <br />
 12. fix screen resolution on virtualbox <br />
       -open terminal
       <br />
-      $ xrandr
-      $ xrandr -s (your monitor resolution)
+      ```bash
+      xrandr
+      xrandr -s (your monitor resolution)
+      ```
       <br />
 
 example:<br />
-$ xrandr -s 1920x1080
-$ xrandr -s 1366x768
-
+```bash
+xrandr -s 1920x1080
+xrandr -s 1366x768
+```
 ### OR
 
 install arandr<br />
-$ sudo apt install arandr
+```sudo apt install arandr```
 <br />
 and run arandr, Choose resolution of your monitor. apply.<br />
-Then save your profile. <br /> 1. click _layout_<br /> 2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save. <br /> 3. open terminal <br />
-$ sudo nano .profile
-write in last line
-$ bash /.screenlayout/(your profilename).sh
+Then save your profile. <br /> 
+1. click _layout_<br /> 
+2. 2. click _save As_ . 
+3. write name whatever you want on _.screenlayout_ folder and 
+4. save. <br />  
+5. open terminal <br />
+```sudo nano .profile```
+6.write in last line
+```bash bash /.screenlayout/(your profilename).sh```
 
 DONE... you can start build your own bspwm debian from this.<br />
 -----------------------------------------------------------------------------------------------------<br />
