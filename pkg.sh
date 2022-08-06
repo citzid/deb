@@ -78,7 +78,7 @@ apt-get install -y unzip ranger arandr
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
 
-
+cd /home/$username
 
 ##################################################################################
 ##Install font Fira Code Nerd Font variant needed
