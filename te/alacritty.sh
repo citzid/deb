@@ -70,3 +70,7 @@ cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
 
 #mkdir -p $fish_complete_path[1]
 #cp extra/completions/alacritty.fish $fish_complete_path[1]/alacritty.fish
+
+#this line to fix gprated wont run
+xhost +local:
+
