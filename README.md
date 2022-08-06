@@ -1,7 +1,7 @@
 
 *##NOTE##*
 DON'T install bspwm and sway is under because still under construction.
-I3wm script run normaly.
+I3-GAPS wm script run normaly.
 
 I asume you have been installed debian base with no GUI.
 Lets go 
