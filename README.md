@@ -4,6 +4,8 @@
 > DON'T install bspwm and sway because is still under construction.<br
 > /> I3-GAPS wm script run normal.<br /> <br />
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ### AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
   1. alacritty
   2. brave browser
@@ -12,8 +14,9 @@
   5. polybar
   6. nord themes
   7. lxappearance unzip ranger arandr xfce4-settings nitrogen
-      
-##################################################################################<br />
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## I asume you have been installed debian base with no GUI.<br />
 This installation changes Debian to the SID (Dev) Branch<br />
 Download Debian non-free netinstall<br />
@@ -28,7 +31,6 @@ Debian 11 non-free <br />
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/ <br />
 <br />
 _do NOT grab the EDU download and this includes non-free and firmware_ <br />
-##################################################################################<br />
 <br />
 
 
