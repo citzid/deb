@@ -15,4 +15,7 @@ xrdb ~/.Xresources
 
 # Load Window Manager
 sxhkd -c /home/$USER/.config/sxhkd/sxhkdrc &
-exec dbus-launch bspwm
+# uncomment what wm you use
+exec i3
+#exec dbus-launch bspwm
+#exec berry
