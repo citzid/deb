@@ -111,7 +111,7 @@ key bind : <br />
 2. fix screen resolution on virtualbox <br />
   -open terminal 
   <br />
-   ```$ xrandr ```
+   ```$ xrandr ```  <br />
    ```$ xrandr -s (your monitor resolution)```
   <br />
    
