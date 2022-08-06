@@ -28,13 +28,13 @@ or<br />
 Debian 11 non-free <br />
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/ <br />
 <br />
-_do NOT grab the EDU download and this includes non-free and firmware_<br />
+_do NOT grab the EDU download and this includes non-free and firmware_ <br />
 ##################################################################################<br />
 <br />
 Get started<br />
 	 ```
-	 $ sudo su <br />
-   	 $ apt install git -y<br /> 
+	 $ sudo su
+   	 $ apt install git -y
 	 ```
 	 
 Lets go  <br />
@@ -48,16 +48,16 @@ Lets go  <br />
 <br />
     SWAY<br />
     ```
-    sudo chmod +x swayinstall.sh <br />
-    sudo ./swayinstall.sh <br />
+    sudo chmod +x swayinstall.sh
+    sudo ./swayinstall.sh
     ```
 <br />
     or<br />
  <br />   
     I3<br />
     ```
-    sudo chmod +x i3install.sh <br />
-    sudo ./i3install.sh <br />
+    sudo chmod +x i3install.sh
+    sudo ./i3install.sh
     ```
     <br />
     <br />
@@ -65,8 +65,8 @@ Lets go  <br />
     <br />
     I3-GAPS<br />
     ```
-    sudo chmod +x i3install.sh <br />
-    sudo ./i3install.sh <br />
+    sudo chmod +x i3install.sh
+    sudo ./i3install.sh
     ```
 <br />
 <br />
@@ -75,8 +75,8 @@ Lets go  <br />
     BSPWM<br />
     <br />
     ```
-    sudo chmod +x bspwminstall.sh <br />
-    sudo ./bspwminstall.sh  <br />
+    sudo chmod +x bspwminstall.sh
+    sudo ./bspwminstall.sh
     ```
      <br />
 ----------------------------------------------------------------------------------------------------- <br />
@@ -98,37 +98,41 @@ key bind : <br />
 1. if error "user is not in the sudoers file". <br />
         - install git and sudo<br />
              ```
-	     $ sudo su  <br />
-	     $ apt install sudo git   <br />
+	     $ sudo su
+	     $ apt install sudo git
 	     ```
+	<br />
         - add your username below %sudo <br />
              ```$ nano etc/sudoers  ```
-                 example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```
-                 save, exit
+                 example :  ```johndoe <tab> ALL=(ALL) NOPASSWD:ALL ```  <br />
+                 save, exit  
+		 <br />
         
-2. fix screen resolution on virtualbox<br />
-  -open terminal<br />
-   ```$ xrandr ```<br />
-   ```$ xrandr -s (your monitor resolution)```<br />
+2. fix screen resolution on virtualbox <br />
+  -open terminal 
+  <br />
+   ```$ xrandr ```
+   ```$ xrandr -s (your monitor resolution)```
+  <br />
    
-   example:<br /> 	
-   		```$ xrandr -s 1920x1080```<br />
-		```$ xrandr -s 1366x768```<br />
+  example:<br /> 	
+   		```$ xrandr -s 1920x1080```
+		```$ xrandr -s 1366x768```
+   
+    
+  ### OR ###
    
    
-   ### OR ###
-   
-   
-   install arandr<br />
-   ```$sudo apt install arandr```<br />
-   and run arandr, Choose resolution of your monitor. apply.<br />
-   Then save your profile. <br />
+  install arandr<br />
+  ```$sudo apt install arandr```<br />
+  and run arandr, Choose resolution of your monitor. apply.<br />
+  Then save your profile. <br />
 		1. click _layout_<br />
-		2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save.<br />
+		2. click _save As_ . write name whatever you want on _.screenlayout_ folder and save. <br />
 		3. open terminal	<br />
-			```sudo nano .profile```<br />
+			```sudo nano .profile```
 			write in last line<br />
-			```bash /.screenlayout/(your profilename).sh```<br />
+			```bash /.screenlayout/(your profilename).sh```
    
 
 DONE... you can start build your own bspwm debian from this.<br />
