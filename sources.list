@@ -1,3 +1,51 @@
+##############################################################
+############################SID###############################
 deb http://deb.debian.org/debian/ sid main non-free contrib
 deb-src http://deb.debian.org/debian/ sid main non-free contrib
 
+deb http://ftp.debian.org/debian/ stable main contrib non-free
+#deb http://ftp.de.debian.org/debian jessie main
+
+
+
+
+##############################################################
+##########################BULLSEYE############################
+#deb http://deb.debian.org/debian bullseye main
+#deb-src http://deb.debian.org/debian bullseye main
+
+#deb http://deb.debian.org/debian-security/ bullseye-security main
+#deb-src http://deb.debian.org/debian-security/ bullseye-security main
+
+#deb http://deb.debian.org/debian bullseye-updates main
+#deb-src http://deb.debian.org/debian bullseye-updates main
+
+
+
+
+##############################################################
+######################CONTRIB NON-FREE########################
+#deb http://deb.debian.org/debian bullseye main contrib non-free
+#deb-src http://deb.debian.org/debian bullseye main contrib non-free
+
+#deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+#deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+
+#deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+#deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+
+
+
+
+##############################################################
+##########################BACKPORTS###########################
+#deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+#deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
+
+
+
+
+##############################################################
+##########################UNSTABLE############################
+#deb http://deb.debian.org/debian/ unstable main
+#deb-src http://deb.debian.org/debian/ unstable main
