@@ -32,10 +32,9 @@ _do NOT grab the EDU download and this includes non-free and firmware_ <br />
 ##################################################################################<br />
 <br />
 Get started<br />
-	 ```
-	 $ sudo su
-   	 $ apt install git -y
-	 ```
+	 ```sudo su```
+	 <br />
+   	 ```apt install git -y```
 	 
 Lets go  <br />
 
