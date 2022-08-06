@@ -21,6 +21,14 @@ Lets go
 
     or
     
+    I3
+    ```
+    sudo chmod +x i3install.sh
+    sudo ./i3install.sh
+    ```
+    
+    or
+    
     I3-GAPS
     ```
     sudo chmod +x i3install.sh
