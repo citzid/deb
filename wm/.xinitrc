@@ -11,7 +11,7 @@ setxkbmap us
 xsetroot -cursor_name left_ptr
 
 # Load .Xresources
-xrdb ~/.Xresources
+#xrdb ~/.Xresources
 
 # Load Window Manager
 sxhkd -c /home/$USER/.config/sxhkd/sxhkdrc &
