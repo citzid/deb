@@ -22,8 +22,8 @@ username=$(id -u -n 1000)
 
 # Online install #
 apt install -y polybar
+mkdir -p  /home/$username/.config/polybar
 cp launch.sh /home/$username/.config/polybar/ && chmod +x launch.sh
-
 cp /usr/share/doc/polybar/config /home/$username/.config/polybar/config.ini
 
 
