@@ -26,7 +26,6 @@ cd ../bspwm && make && sudo make install
 cd ../xdo && make && sudo make install
 
 sudo apt install -y bspwm sxhkd
-sudo apt autoremove -y lemonbar
 
 ##################################################################################
 ## Configuration ##
@@ -39,7 +38,7 @@ cp sxhkdrc /home/$username/.config/sxhkd/
 cp .xinitrc /home/$username/
 
 ## move original config example for backup ##
-cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/bspwmr.bak
+cp /usr/share/doc/bspwm/examples/bspwmrc /home/$username/.config/bspwm/bspwmrc.bak
 cp /usr/share/doc/bspwm/examples/sxhkdrc /home/$username/.config/sxhkd/sxhkdrc.bak
 
 ##################################################################################
