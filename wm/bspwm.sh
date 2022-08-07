@@ -9,9 +9,11 @@ username=$(id -u -n 1000)
 
 ##################################################################################
 ##Install Dependencies##
-sudo apt install -y gcc make xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev
+sudo apt install -y gcc g++ make cmake xcb pkg-config python3 libfreetype6-dev
+sudo apt install -y libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev
+sudo apt install -y libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev
 sudo apt install -y libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev
-sudo apt install -y libasound2-dev libxcb-xtest0-dev xorg xorg-server xorg-xinit
+sudo apt install -y libasound2-dev libxcb-xtest0-dev linxcb-shape0-dev xorg 
 
 ##################################################################################
 ## Install bspwm sxhkd ##
