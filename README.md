@@ -126,7 +126,7 @@ Then save your profile. <br />
 4. open terminal <br />
 ```sudo nano .profile```
 5. write in last line <br />
-```bash /.screenlayout/(your profilename).sh```
+```bash ~/.screenlayout/(your profilename).sh```
 
 DONE... you can start build your own bspwm debian from this.<br />
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
