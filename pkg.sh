@@ -90,4 +90,4 @@ fc-cache -vf
 
 ##################################################################################
 ##Install GNOME SCREENSHOT TOOLS
-sudo apt-get -y gnome-screenshot
+sudo apt-get install -y gnome-screenshot
