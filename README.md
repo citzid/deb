@@ -1,10 +1,12 @@
 
-# NOTE
+# [NOTE]
 
 > DON'T install  **~~I3~~** and **~~SWAY~~** because is still under construction.<br
 > /> I3-GAPS & BSPWM wm run normal.<br /> <br />
 
-
+<img src="https://github.com/citzid/deb/blob/main/Screenshot.png"
+     alt="citz deb"
+     style="float: left; margin-right: 10px;" />
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ### AUTO INSTALL PKG (You can edit on pkg.sh & from WMinstall.sh)<br />
   1. alacritty
