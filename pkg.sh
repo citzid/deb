@@ -54,14 +54,14 @@ apt-get install -y feh
 ##################################################################################
 ##Install theme setting
 
-apt-get install -y lxappearance pulseaudio
+apt-get install -y lxappearance
 
 
 
 ##################################################################################
 ##Install theme setting
 
-apt-get install -y unzip ranger arandr
+apt-get install -y unzip ranger arandr neofetch htop conky
 
 
 
@@ -87,3 +87,7 @@ unzip FiraCode.zip -d /usr/share/fonts
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 #unzip Meslo.zip -d /usr/share/fonts
 fc-cache -vf
+
+##################################################################################
+##Install GNOME SCREENSHOT TOOLS
+sudo apt-get -y gnome-screenshot
