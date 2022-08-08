@@ -24,7 +24,7 @@ username=$(id -u -n 1000)
 apt install -y polybar
 mkdir -p  /home/$username/.config/polybar
 cp /home/$username/deb/dotfiles/polybar/* /home/$username/.config/polybar/
-chmod +x launch.sh config config.bak
+chmod +x /home/$username/.config/polybar/*
 
 
 
