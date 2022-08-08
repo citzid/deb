@@ -4,6 +4,8 @@
 > DON'T install  **~~I3~~** and **~~SWAY~~** because is still under construction.<br
 > /> I3-GAPS & BSPWM wm run normal.<br /> <br />
 
+> This is online install not offline. Thats mean you need INTERNET CONNECTION
+
 <img src="https://github.com/citzid/deb/blob/main/Screenshot.png"
      alt="citz deb"
      style="float: left; margin-right: 10px;" />
