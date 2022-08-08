@@ -25,7 +25,7 @@ username=$(id -u -n 1000)
 apt purge rust -y
 apt install -y polybar
 mkdir -p  /home/$username/.config/polybar
-cp /home/$username/deb/dotfiles/polybar/* /home/$username/.config/polybar/
+cp /home/$username/deb/dotfiles/polybar/* /home/$username/.config/polybar
 chmod +x /home/$username/.config/polybar/*
 
 
