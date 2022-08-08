@@ -14,6 +14,7 @@ username=$(id -u -n 1000)
 #sudo apt-get -y install xcb-proto libxcb-xrm-dev i3-wm libasound2-dev
 #sudo apt-get -y install libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev
 
+
 #Clone the source for Polybar#
 #git clone https://github.com/jaagr/polybar.git
 
@@ -21,6 +22,7 @@ username=$(id -u -n 1000)
 #cd polybar && ./build.sh
 
 # Online install #
+apt purge rust -y
 apt install -y polybar
 mkdir -p  /home/$username/.config/polybar
 cp /home/$username/deb/dotfiles/polybar/* /home/$username/.config/polybar/
