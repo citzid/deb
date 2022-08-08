@@ -11,7 +11,7 @@ mkdir -p home/$username/.config
 #apt-get install -y terminator
 #apt-get install -y urxvt
 
-
+xhost +local:
 
 ##################################################################################
 ##Install browser
@@ -45,8 +45,8 @@ apt-get install -y geany
 ##################################################################################
 ##Install wallpaper manager
 
-apt-get install -y nitrogen
-#apt-get install -y feh
+#apt-get install -y nitrogen
+apt-get install -y feh
 #apt-get install -y variety
 
 
@@ -54,7 +54,7 @@ apt-get install -y nitrogen
 ##################################################################################
 ##Install theme setting
 
-apt-get install -y lxappearance font-manager
+apt-get install -y lxappearance pulseaudio
 
 
 
