@@ -26,37 +26,26 @@
 ;ws-icon-7 = ";"
 
 [colors]
-background = #aa282A2E
+background = #401E90FF
 background-alt = #aa373B41
 foreground = #aaC5C8C6
 primary = #90EE90
 secondary = #8ABEB7
 alert = #A54242
 disabled = #707880
+none = #00000000
 
 [bar/mybar]
 width = 100%
-height = 18pt
-radius = 6
+height = 20pt
+radius = 10
 
-# Low DPI
-;dpi = 120
-# Medium DPI
-dpi = 160
-# HIGH DPI
-;dpi = 240
-
-#ldpi    (low) ~120dpi
-#mdpi    (medium) ~160dpi
-#hdpi    (high) ~240dpi
-#xhdpi   (extra-high) ~320dpi
-#xxhdpi  (extra-extra-high) ~480dpi
-#xxxhdpi (extra-extra-extra-high) ~640dpi
+dpi = 96
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 line-size = 2pt
-border-size = 4pt
+border-size = 6pt
 border-color = #00000000
 
 padding-left = 2
@@ -70,11 +59,11 @@ separator-foreground = ${colors.disabled}
 
 font-0 = Play:size=10:weight=regular;2
 font-1 = FontAwesome:size=10;0
-font-2 = HurmitNerdFontmono:size=10:weight=bold;2
+font-2 = Hurmit-Nerd-Fontmono:size=10:weight=bold;2
 
-modules-left = xworkspaces
-modules-center = xwindow
-modules-right = filesystem pulseaudio memory cpu network date time powermenu
+modules-left = bspwm
+modules-center = date
+modules-right = pulseaudio powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -89,8 +78,8 @@ enable-ipc = true
 
 ; override-redirect = true
 
-[module/xworkspaces]
-type = internal/xworkspaces
+[module/bspwm]
+type = internal/bspwm
 
 ; Available tokens:
 ;   %name%
@@ -98,7 +87,7 @@ type = internal/xworkspaces
 ;   %index%
 ;   %output%
 label-active = %index%
-label-active-background = ${colors.background-alt}
+label-active-background = ${none}
 label-active-underline= ${colors.primary}
 label-active-padding = 1
 
@@ -109,8 +98,8 @@ label-occupied-padding = 1
 ;label-urgent-background = ${colors.alert}
 ;label-urgent-padding = 1
 
-label-empty = %output%
-label-empty-foreground = ${colors.disabled}
+label-empty = 
+label-empty-foreground = ${colors.background-alt} 
 label-empty-padding = 1
 
 ; Only show workspaces defined on the same output as the bar
@@ -428,4 +417,7 @@ content-foreground = ${colors.shade17}
 content-padding = 1
 click-left = "$HOME/.config/rofi/powermenu/powermenu.sh"
 content = "⏻"
+
 ; vim:ft=dosini
+
+#E#O#F#
