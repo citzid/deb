@@ -13,7 +13,7 @@ sudo apt install -y gcc g++ make cmake xcb pkg-config python3 libfreetype6-dev
 sudo apt install -y libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev
 sudo apt install -y libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev
 sudo apt install -y libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev
-sudo apt install -y libasound2-dev libxcb-xtest0-dev linxcb-shape0-dev xorg 
+sudo apt install -y libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev xorg 
 
 ##################################################################################
 ## Install bspwm sxhkd ##
