@@ -16,6 +16,6 @@ xsetroot -cursor_name left_ptr
 # Load Window Manager
 sxhkd -c /home/$USER/.config/sxhkd/sxhkdrc &
 # uncomment what wm you use
-exec i3
-#exec dbus-launch bspwm
+#exec i3
+exec dbus-launch bspwm
 #exec berry
