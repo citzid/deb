@@ -82,14 +82,14 @@ apt-get install -y lxappearance
 ##################################################################################
 ##Install theme setting
 
-apt-get install -y unzip ranger arandr neofetch htop conky
+apt-get install -y unzip ranger arandr neofetch htop conky gpick
 
 
 
 ##################################################################################
 ##Install Audio setting
 
-#apt-get install -y pulseaudio pulseaudio-alsa alsa-utils
+#apt-get install -y pulseaudio alsa-utils
 
 
 
