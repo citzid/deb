@@ -7,7 +7,7 @@ mkdir -p home/$username/.config
 ##################################################################################
 ##Install terminal emulator
 
-#apt-get install -y kitty
+apt-get install -y kitty
 #apt-get install -y terminator
 #apt-get install -y urxvt
 
@@ -15,11 +15,15 @@ xhost +local:
 
 ##################################################################################
 ##Install browser
-
 #apt-get install -y firefox-esr
-apt-get install -y brave
 #apt-get install -y chromium
 
+## BRAVE BROWSER INSTALL
+sudo apt install apt-transport-https curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
 
 
 ##################################################################################
@@ -33,10 +37,17 @@ apt-get install -y thunar
 
 
 ##################################################################################
+##Install Launcher
+
+#sudo apt install rofi
+#sudo apt install wofi
+sudo apt install dmenu
+
+
+##################################################################################
 ##Install editor
 
 apt-get install -y geany
-#apt-get install -y notepadqq
 #apt-get install -y vim
 #apt-get install -y neovim
 
