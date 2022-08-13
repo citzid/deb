@@ -11,7 +11,6 @@ apt-get install -y kitty
 #apt-get install -y terminator
 #apt-get install -y urxvt
 
-xhost +local:
 
 ##################################################################################
 ##Install browser
@@ -30,6 +29,7 @@ sudo apt install brave-browser -y
 ##Install file manager
 
 apt-get install -y thunar
+apt-get install -y ranger
 #apt-get install -y pcmanfm
 #apt-get install -y nautilus
 #apt-get install -y dolphin
@@ -70,39 +70,19 @@ apt-get install -y geany
 apt-get install -y feh
 #apt-get install -y variety
 
-
+## Install GNOME SCREENSHOT TOOLS
+sudo apt-get install -y gnome-screenshot
 
 ##################################################################################
 ##Install theme setting
-
 apt-get install -y lxappearance
 
-
-
-##################################################################################
-##Install theme setting
-
-apt-get install -y unzip ranger arandr neofetch htop conky gpick
-
-
-
-##################################################################################
-##Install Audio setting
-
-#apt-get install -y pulseaudio alsa-utils
-
-
-
-##################################################################################
-##Download Nordic Theme
-
+## Download Nordic Theme
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
-
 cd /home/$username
 
-##################################################################################
-##Install font Fira Code Nerd Font variant needed
+## Install font Fura Code Nerd Font variant needed
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
 unzip FiraCode.zip -d /usr/share/fonts
 #wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
@@ -110,8 +90,8 @@ unzip FiraCode.zip -d /usr/share/fonts
 fc-cache -vf
 
 ##################################################################################
-##Install GNOME SCREENSHOT TOOLS
-sudo apt-get install -y gnome-screenshot
+##Install Audio setting
+apt-get install -y pulseaudio alsa-utils pavucontrol
 
 sudo chown -R $username:www-data ~/
 
