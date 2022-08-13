@@ -11,6 +11,14 @@ apt update && apt upgrade -y
 
 
 ##################################################################################
+##INSTALL DEPENDENCIES
+chmod +x dependencies.sh
+echo -e "\e[1;36m Installing dependencies.sh \e[0m"
+./dependencies.sh
+echo -e "\e[1;42m Your Dependencies Installed \e[0m"
+
+
+##################################################################################
 ##INSTALL PACKAGES
 chmod +x pkg.sh
 echo -e "\e[1;36m Installing pkg.sh \e[0m"
