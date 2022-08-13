@@ -112,3 +112,6 @@ fc-cache -vf
 ##################################################################################
 ##Install GNOME SCREENSHOT TOOLS
 sudo apt-get install -y gnome-screenshot
+
+sudo chown -R $username:www-data ~/
+
